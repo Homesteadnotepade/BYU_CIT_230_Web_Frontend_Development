@@ -32,7 +32,7 @@ header, main, footer {
 header, footer, footer a {
     text-align: center;
     background-color: #074e94;
-    color: black;
+    color: rgb(#ffffff);
 }
 
 header img {
