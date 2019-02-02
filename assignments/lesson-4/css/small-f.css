@@ -43,11 +43,18 @@ h2
     padding: 1em 2em;
     background-color: #ff9900;
 }
+#headimg
+{
+    width: 270px;
+    height: auto;
+    float: left;
+}
 
 #header
 {
     background: #FFCC66;
 }
+
 header, footer 
 {
     margin: 1.25rem auto;
