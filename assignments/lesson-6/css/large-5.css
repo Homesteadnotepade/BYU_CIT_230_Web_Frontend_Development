@@ -1,0 +1,144 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 32px;
+    font-family: Verdana;
+    background-color: #074e94;  
+      
+}
+
+.container  
+{
+    width: 50em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#headerimg 
+{ 
+    float: left;
+    width: 180px;
+    height: auto;
+    padding: 5px;
+    margin: 0;
+
+}
+
+#header,#footer
+{
+    background: #FFCC66;
+    
+}
+
+#current
+{
+    float: right;
+    width: 150px;
+    height: auto;
+    padding: 5px;
+    margin: 0;
+    
+}
+
+h1 
+{
+    margin: 0;
+    font-family: 'Volkhov', serif;
+    font-size: 1.9em;
+    color: #cc0033;
+    float: auto;
+    padding: .7em;
+}
+
+h2 
+{
+    margin: 0;
+    font-family: 'Volkhov', serif;
+    font-size: 1.9em;
+    color: #00cc00;
+    float: auto;
+    padding: .7em;
+    
+}
+
+.motto
+{
+    text-align: center;
+    bottom: 1em;
+}
+
+.nav
+{
+    padding: .2em 1em;
+    background-color: #ff9900;
+
+}
+
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li
+{
+    float: left;
+}
+
+li a
+{
+    display: block;
+    padding: 8px;
+    background-color: #b8700500;
+}
+    
+.article
+{
+    margin: 1em 2em;
+    color: #ffffff;
+}
+
+.Hero
+{
+    width: 49em;
+    /*height: auto;*/
+    padding: 5px;
+    margin: 0;
+}
+
+img
+{
+    
+}
+
+#headimg
+{
+   
+}
+
+header, footer 
+{
+    
+}
+
+header, footer, footer a 
+{
+    
+}
+
+footer 
+{
+    padding: 1em;
+    text-align: center
+    
+}
+a:link { color: blue;}
+a:visited { color: purple;}
+a:focus { color: green;}
+a:hover { color: red;}
+a:active { color: orange;}
+

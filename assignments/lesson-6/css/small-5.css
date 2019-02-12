@@ -1,0 +1,122 @@
+body 
+{
+    font-size: 16px;
+    line-height: 32px;
+    font-family: Verdana;
+    background-color: #074e94;
+    width: 320px;
+    
+}
+
+.container  
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header,#headerimg 
+{ 
+    float: left;
+    width: 120px;
+    height: auto;
+    padding: 5px;
+    margin: 0;
+
+}
+
+#header
+{
+    width: 310px;
+    background: #FFCC66;
+}
+
+h1 
+{
+    font-family: 'Volkhov', serif;
+    font-size: 1.3em;
+    color: #cc0033;
+    float: auto;
+    margin: 0;
+    padding: 2px;
+}
+
+h2 
+{
+    font-size: 1.95em;
+    text-align: right;
+    border-bottom: 1px solid #bbb;
+    
+}
+
+.motto
+{
+    float: right;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #993300;
+    margin: 0;
+    top: 20px;
+}
+
+.nav
+{
+    width: 320px
+    font-size: 11px;
+    background-color: #ff9900;
+    text-align: center;
+    margin: 0;
+
+}
+
+ul
+{
+    list-style-type: none;
+    text-align: center;
+    font-family: Georgia, sans-serif;
+    font-size: 1.4em;
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+}
+
+h4
+{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+img
+{
+    width: 320px;
+    height: auto;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#headimg
+{
+    width: 270px;
+    height: auto;
+    float: left;
+}
+
+header, footer 
+{
+    margin: 1.25rem ;
+    padding: .5rem;
+    max-width: 800px;
+}
+
+header, footer, footer a 
+{
+    text-align: center;
+    background-color: #ff9900;
+}
+
+footer 
+{
+    font-size: 13px;
+    
+}
