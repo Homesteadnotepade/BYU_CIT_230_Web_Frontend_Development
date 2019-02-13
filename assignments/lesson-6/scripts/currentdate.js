@@ -1,5 +1,4 @@
-{
-var d = new Date();
+{ var d = new Date();
   var dayOfTheWeek = d.getDay();
   var date = d.getDate();
   var month = d.getMonth()
@@ -47,6 +46,5 @@ if ( month == 0){
     month = "December"
 }
   
-  document.getElementById("demo").innerHTML = dayOfTheWeek +", " + date + " " + 
-                                            month + " " + year;
+  document.innerHTML = dayOfTheWeek +", " + date + " " + month + " " + year;
 }
