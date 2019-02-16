@@ -60,6 +60,7 @@ h2
 
 .topnav
 {
+    width: 50em;
     padding: .2em 1em;
     background-color: #ff9900;
     overflow: hidden;
@@ -128,8 +129,14 @@ ul
 
 }
 
+.artical
+{
+    width: 50 em;
+}
+
 h4
 {
+    width: 50 em;
     font-family: 'Times New Roman', Times, serif;
     text-align: justify;
 }
