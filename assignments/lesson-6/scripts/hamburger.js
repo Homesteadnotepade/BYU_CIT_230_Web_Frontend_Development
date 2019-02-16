@@ -4,4 +4,3 @@ var x = document.getElementById("myTopnav");
   } else {
     x.className = "topnav";
   }
-}
