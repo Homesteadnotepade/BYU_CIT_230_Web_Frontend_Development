@@ -72,8 +72,9 @@ h2
 
 .topnav
 {
-    padding: .2em 1em;
-    background-color: #ff9900;
+    width: 49em;
+    padding: .1em .5em;
+    background-color: #ff9901;
     overflow: hidden;
 }
 
