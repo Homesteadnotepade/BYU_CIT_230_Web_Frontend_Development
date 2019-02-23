@@ -150,11 +150,11 @@ li a
     background-color: #b8700500;
 }
 
-#weathersum
+/*#weathersum
 {
     /*display: flex;
     flex-direction: column;
-    justify-content: flex-end;*/
+    justify-content: flex-end;
     position: absolute;
     top: 275px;
     background-color: rgba(226, 228, 133, 0.733);
@@ -163,9 +163,8 @@ li a
     padding: 10px;
     border: 25px soild white;
     margin: 25px;
-    
+    */
 }
-    
 .article
 {
     margin: 1em .5em;

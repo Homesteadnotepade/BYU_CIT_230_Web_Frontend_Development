@@ -29,6 +29,7 @@ body
 
 #header,#footer
 {
+    width: 784px;
     background: #FFCC66;
     
 }
@@ -81,7 +82,6 @@ h2
 .topnav a 
 {
     float: left;
-    display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
@@ -159,7 +159,7 @@ li a
 .Hero
 {
     width: 49em;
-    /*height: auto;*/
+    height: auto;
     padding: 5px;
     margin: 0;
 }
