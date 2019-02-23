@@ -47,5 +47,7 @@ if ( month === 0){
 } else if ( month === 11){
     month = "December";
 }
+
+var string = dayOfTheWeek + ", " + date + " " + month + " " + year;
   
-Document.all(dayOfTheWeek + ", " + date + " " + month + " " + year);
+document.getElementById('dateoutput').innerHTML = string;
