@@ -1,17 +1,20 @@
 body 
 {
+    margin: 0;
+    padding: 0;
     font-size: 16px;
     line-height: 32px;
     font-family: Verdana;
     background-color: #074e94;
-    width: 320px;
+    
     
 }
 
 .container  
 {
-    margin-left: auto;
-    margin-right: auto;
+    width: 320px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 #header,#headerimg 
@@ -30,17 +33,13 @@ body
     background: #FFCC66;
 }
 
-.current
-{
-    visibility: hidden;
-}
+
 
 h1 
 {
     font-family: 'Volkhov', serif;
     font-size: 1.3em;
     color: #cc0033;
-    float: auto;
     margin: 0;
     padding: 2px;
 }
@@ -71,6 +70,14 @@ h2
     background-color: #ff9900;
     text-align: center;
     margin: 0;
+
+}
+
+.topnav
+{
+    width: 320px;
+    background-color: #ff9901;
+    
 
 }
 

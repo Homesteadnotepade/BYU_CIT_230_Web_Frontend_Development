@@ -1,119 +1,128 @@
 body 
 {
-    margin: 0 !important;
-    padding: 0 !important;
-    font-size: 16px !important;
-    line-height: 32px !important;
-    font-family: Verdana !important;
-    background-color: #074e94 !important;  
-      
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 32px ;
+    font-family: Verdana;
+    background-color: #074e94;
 }
+
 
 .container  
 {
-    width: 50em !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    width: 50em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header
+{
+    width: 50em;
+    background: #FFCC66;
 }
 
 #header .topnav ul li
 {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #headerimg 
 { 
-    float: left !important;
-    width: 180px !important;
-    height: auto !important;
-    padding: 5px !important;
-    margin: 0 !important;
-    bottom: .2em !important;
+    float: left;
+    width: 180px;
+    height: auto;
+    padding: 5px;
+    margin: 0;
+    bottom: .2em;
 
 }
 
 #header,#footer
 {
-    background: #FFCC66 !important;
+    background: #FFCC66;
     
 }
 
 #current
 {
-    float: right !important;
-    width: 150px !important;
-    height: auto !important;
-    padding: 5px !important;
-    margin: 0 !important;
+    float: right;
+    width: 150px;
+    height: auto;
+    padding: 1px;
+    margin: 0;
     
 }
 
 h1 
 {
-    margin: 0 !important;
-    font-family: 'Volkhov', serif !important;
-    font-size: 1.9em !important;
-    color: #cc0033 !important;
-    float: auto !important;
-    padding: .7em !important;
+    margin: 0;
+    font-family: 'Volkhov', serif;
+    font-size: 1.9em;
+    color: #cc0033;
+    float: auto;
+    padding: .7em;
 }
 
 h2 
 {
-    margin: 0 !important;
-    font-family: 'Volkhov', serif !important;
-    font-size: 1.9em !important;
-    color: #00cc00 !important;
-    float: auto !important;
-    padding: .7em !important;
+    margin: 0;
+    font-family: 'Volkhov', serif;
+    font-size: 1.9em;
+    color: #00cc00;
+    float: auto;
+    padding: .7em;
     
 }
 
-.motto
+#motto
 {
-    text-align: center !important;
-    bottom: 1em !important;
+    text-align: left;
+    bottom: 1em;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
 }
 
 .topnav
 {
-    width: 49em !important;
-    padding: .1em .5em !important;
-    background-color: #ff9901 !important;
-    overflow: hidden !important;
+    width: 49em;
+    padding: .1em .5em;
+    background-color: #ff9901;
+    overflow: hidden;
 }
 
 .topnav a 
 {
-    float: left !important;
-    display: block !important;
-    color: #f2f2f2 !important;
-    text-align: center !important;
-    padding: 14px 16px !important;
-    text-decoration: none !important;
-    font-size: 17px !important;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
 topnav a:hover 
 {
-    background-color: #ddd !important;
-    color: black !important;
+    background-color: #ddd;
+    color: black;
 }
 
 .active 
 {
-    background-color: #4CAF50 !important;
-    color: white !important;
+    background-color: #4CAF50;
+    color: white;
 }
 
 .topnav .icon 
 {
-    display: none !important;
+    display: none;
 }
 
-@media screen and (max-width: 600px) 
+@media screen and (max-width: 900px) 
 {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -122,7 +131,7 @@ topnav a:hover
     }
 }
 
-@media screen and (max-width: 600px) 
+@media screen and (max-width: 900px) 
 {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
@@ -139,51 +148,51 @@ topnav a:hover
 
 ul
 {
-    list-style-type: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    overflow: hidden !important;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 li
 {
-    float: left !important;
+    float: left;
 }
 
 li a
 {
-    display: block !important;
-    padding: 8px !important;
-    background-color: #b8700500 !important;
+    display: block;
+    padding: 8px;
+    background-color: #b8700500;
 }
 
 #weathersum
 {
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: flex-end !important;
-    position: absolute !important;
-    top: 255px !important;
-    background-color: rgba(226, 228, 133, 0.733) !important;
-    opacity: 50% !important;
-    width: 250px !important;
-    padding: 10px !important;
-    border: 25px soild white !important;
-    margin: 25px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    top: 255px;
+    background-color: rgba(226, 228, 133, 0.733);
+    opacity: 50%;
+    width: 250px;
+    padding: 10px;
+    border: 25px soild white;
+    margin: 25px;
 
 } 
 .article
 {
-    margin: 1em .5em !important;
-    color: #ffffff !important;
+    margin: 1em .5em;
+    color: #ffffff;
 }
 
 .Hero
 {
-    width: 49em !important;
-    height: auto !important;
-    padding: 5px !important;
-    margin: 0 !important;
+    width: 49em;
+    height: auto;
+    padding: 5px;
+    margin: 0;
 }
 
 .grid 
@@ -231,6 +240,10 @@ footer
     text-align: center
     
 }
+
+
+
+
 a:link { color: blue;}
 a:visited { color: purple;}
 a:focus { color: green;}
