@@ -41,6 +41,11 @@ header img {
     float: right;
 }
 
+footer a
+{
+    color: #ffffff   
+}
+
 footer {
     font-size: 13px;
     color: #ffffff
