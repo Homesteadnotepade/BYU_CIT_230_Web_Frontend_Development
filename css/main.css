@@ -41,13 +41,20 @@ header img {
     float: right;
 }
 
+<<<<<<< HEAD
+=======
+footer a
+{
+    color: #ffffff   
+}
+>>>>>>> 18764ba3735dc67d0513f66ef2a39439e03f4fbc
 
 footer {
     font-size: 13px;
     color: #ffffff
 }
 
-a:link { color: white;}
+a:link { color: blue;}
 a:visited { color: purple;}
 a:focus { color: green;}
 a:hover { color: red;}
