@@ -5,9 +5,7 @@ body
     font-size: 16px;
     line-height: 32px;
     font-family: Verdana;
-    background-color: #074e94;
-    
-    
+    background-color: #074e94;    
 }
 
 .container  
@@ -20,11 +18,17 @@ body
 #header,#headerimg 
 { 
     float: left;
-    width: 120px;
+    width: 100px;
     height: auto;
     padding: 5px;
     margin: 0;
 
+}
+
+#current
+{
+    width: 0px;
+    height: 0px; 
 }
 
 #header
@@ -35,13 +39,14 @@ body
 
 
 
-h1 
+#header h1 
 {
     font-family: 'Volkhov', serif;
     font-size: 1.3em;
     color: #cc0033;
-    margin: 0;
-    padding: 2px;
+    margin: 0px;
+    padding:0px;
+
 }
 
 h2 
@@ -160,7 +165,11 @@ figcaption
 {
     font-size: small;
     color: white;
-    
+}
+
+/* located in stormcenter.html */
+form
+{
     
 }
 

@@ -77,6 +77,7 @@ h3
     float: auto;
     padding: .7em;
     align-content: center;
+    text-align: center;
 }
 
 #motto
@@ -129,30 +130,6 @@ h3
     display: none;
 }
 
-@media screen and (max-width: 900px) 
-{
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-}
-
-@media screen and (max-width: 900px) 
-{
-    .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-}
-*/
 ul
 {
     list-style-type: none;
@@ -196,8 +173,17 @@ li
 }
 
 /*
-* Table creation for tablebuild.html
+* Form and table creation for tablebuild.html
 */
+
+form
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
 table
 {
     margin-left: auto;
@@ -212,10 +198,10 @@ table
 
 table, tr, td
 {
-    border: 1px #cfd1d0
+    border: 1px gray
 }
 
-thead tr:first-child
+thead tr:nth-child(1)
 {
     background-color: #7FB9C2;
     color: black;
@@ -223,28 +209,41 @@ thead tr:first-child
     font-weight: bold;
 }
 
-thead tr td:first-child(3)
+thead tr:nth-of-type(2)
 {
     background-color: #628CA6;
     color: white;
 }
 
+tbody tr:nth-child(odd)
+{
+    background: #E7F0ED;
+}
+
+tbody tr:nth-child(even)
+{
+    background: #E7FFED;
+}
+
+tfoot tr:nth-of-type(1)
+{
+    background: #7FB9C2;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
 th
 {
-    border: 1px solild #E7F0ED;
+    border: 1px solild gray;
     text-align: center
 }
+ /*end of tablebuild.html*/
 
-tr:nth-of-type(even)
+#darkblue
 {
-    background-color: #E7F0ED;
+    background-color: #628CA6;
 }
-
-tr:nth-of-type(odd)
-{
-    background-color: #E7FFED;
-}
-/* end of tablebuild.html*/
 
 .grid 
 {
