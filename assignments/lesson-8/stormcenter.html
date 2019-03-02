@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Photo Gallery</title>
+    <title>Contact Form</title>
     <meta name="description" content="W04 Town Page Build">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/medium-8.css">
@@ -21,69 +21,69 @@
             <script src="scripts/hamburger.js" class="icon"> </script>
                 <div class="topnav" id="myTopnav">
                     <ul>
-                        <li><a href="preston-7.html">Home</a></li>
+                        <li><a href="lesson-7/preston-7.html">Home</a></li>
                         <li><a href="#preston">Preston</a></li>
                         <li><a href="#sodas">Soda Springs</a></li>
                         <li><a href="#fish">Fish Haven</a></li>
                         <li><a href="stormcenter.html" class="active">Storm Center</a></li>
-                        <li><a href="gallery-7.html">Gallery</a></li>
+                        <li><a href="gallery-8.html">Gallery</a></li>
                     </ul>
                 </div>
             <h2>Storm Center</h2>
+            <h3>Contact Form</h3>
             <form>
                 <table>
                     <tr>
                         <td>Full Name:</td>
                         <td>Email:</td>
+                        <td>Phone Number</td>
                     </tr>
                     <tr>
                         <td><input type="text" id="fullName" required
                             pattern="[A-Za-z]{5}"> </td>
                         <td><input type="text" id="email"
                             placeholder="user@domain.com"></td>
-                    </tr> 
-                     
-                    
-                    
-                    <input type="text" id="email"
-                    placeholder="user@domain.com">
-                    
-                    Phone Number: <br>
-                    <input type="tel" id="phoneNumber" required>
-                    <br>
-                    Zip Code: <br>
-                    <input type="number" id="zipCode" required>
-                    <br>
-                    Storm Date: <br>
-                    <input type="date" id="date">
-                    <br>
-                    Storm Type: <br>
-                    <input list="stormType">
-                    <datalist id="stormType">
-                        <option value="Flash Flood">
-                        <option value="Hail">
-                        <option value="Hurricane">
-                        <option value="Thunderstorm">
-                        <option value="Tornado">
-                    </datalist>
-                    <br>
-                    Storm Severity: <input type="range" name="points" min="0" max="10">
-                    <br>
-                    Storm Region: <select name="stormRegion">
-                        <option text="Select Region">Select Region...</option>
-                        <option value="Preston">Preston</option>
-                        <option value="Soda Springs">Soda Springs</option>
-                        <option value="Fish Haven">Fish Haven</option>
-                    </select>
-                    <br>
-                    User In-Danger Level: <br>
-                    <input type="radio" name="In-Danger" value="Yes">Yes<br>
-                    <input type="radio" name="In-Danger" value="Maybe">Maybe<br>
-                    <input type="radio" name="In-Danger" value="No">No<br>
-                    Additional Information or Comments:
-                    <input type="textarea">
-                    <br>
-                    <button type="button">Submit</button>
+                        <td><input type="tel" id="phoneNumber" required></td>
+                    </tr>
+                    <tr>
+                        <td>Zip Code:</td>
+                        <td>Storm Date:</td>
+                        <td>Storm Type:</td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" id="zipCode" required></td>
+                        <td><input type="date" id="date"></td>
+                        <td><input list="stormType">
+                            <datalist id="stormType">
+                                <option value="Flash Flood">
+                                <option value="Hail">
+                                <option value="Hurricane">
+                                <option value="Thunderstorm">
+                                <option value="Tornado">
+                                </datalist></td>
+                    </tr>
+                    <tr>
+                        <td>Storm Severity:</td>
+                        <td>Storm Region:</td>
+                        <td>User In-Danger Level:</td>
+                    </tr>
+                    <tr>
+                        <td><input type="range" name="points" min="0" max="10"></td>
+                        <td><select name="stormRegion">
+                                <option text="Select Region">Select Region...</option>
+                                <option value="Preston">Preston</option>
+                                <option value="Soda Springs">Soda Springs</option>
+                                <option value="Fish Haven">Fish Haven</option>
+                            </select></td>
+                        <td><input type="radio" name="In-Danger" value="Yes  ">Yes<br>
+                            <input type="radio" name="In-Danger" value="Maybe">Maybe<br>
+                            <input type="radio" name="In-Danger" value="No   ">No<br></td>
+                    </tr>
+                    <tr>
+                        <td>Additional Information or Comments:</td>
+                        <td><input colspan="3" type="textarea"></td>
+                        <td><button type="button" a href="thanks.html" target="_blank">Submit</button></td>
+                    </tr>
                 </table>
             </form>
             
