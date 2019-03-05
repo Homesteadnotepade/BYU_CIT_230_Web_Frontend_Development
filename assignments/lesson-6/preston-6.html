@@ -14,22 +14,21 @@
     <div class="container">
             <div id="header">
                 <img src="images/landscape.jpg" id="headerimg" alt="Landscape">
-                <img src="images/landscape.jpg" id="current" class="hidden" alt="Current Conditions">
+                <img src="images/landscape.jpg" id="current" alt="Current Conditions">
                 <h1>SodaFishPreston, ID Weather</h1>
                 <div class="motto">Weather news happens... or not!</div>
             </div>
-                <div class="topnav" id="myTopnav">
-                    <ul><script src="scripts/hamburger.js" class="icon"> </script>
-                        <li><a href="#home" class="active">Home</a></li>
-                        <li><a href="#preston">Preston</a></li>
-                        <li><a href="#sodas">Soda Springs</a></li>
-                        <li><a href="#fish">Fish Haven</a></li>
-                        <li><a href="#storm">Storm Center</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                    </ul>
-                    
-                            
-                </div>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="preston-8.html" class="active">Home</a></li>
+                    <li><a href="#preston">Preston</a></li>
+                    <li><a href="#sodas">Soda Springs</a></li>
+                    <li><a href="#fish">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery-8.html">Gallery</a></li>                        
+                </ul>                         
+            </nav>
             <h2>Town Name</h2>
             <picture>
                 <source srcset="images/Optimizedhero400.jpg" media="(min-width: 500px) and (max-width: 599px)">
@@ -53,3 +52,6 @@
     </div>
 </body>
 </html>
+<script src="scripts/hamburger.js" class="icon"> </script>
+
+

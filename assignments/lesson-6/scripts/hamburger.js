@@ -1,6 +1,4 @@
-var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
+function toggleMenu() {
+	document.getElementsByClassName("navigation")
+	[0].classList.toggle("responsive");
   }
