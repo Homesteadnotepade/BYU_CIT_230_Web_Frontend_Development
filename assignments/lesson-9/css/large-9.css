@@ -1,0 +1,325 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 32px ;
+    font-family: Verdana;
+    background-color: #074e94;
+}
+
+.container  
+{
+    width: 50em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header
+{
+    width: 50em;
+    height: 7em;
+    background: #FFCC66;
+}
+
+#headerimg 
+{ 
+    float: left;
+    width: 180px;
+    height: auto;
+    padding: 5px;
+    margin: 0;
+    bottom: .2em;
+}
+
+#header,#footer
+{
+    background: #FFCC66;
+    
+}
+
+#current
+{
+    float: right;
+    width: 150px;
+    height: auto;
+    padding: 3px;
+    margin: 0; 
+}
+
+h1 
+{
+    margin: 0;
+    font-family: 'Volkhov', serif;
+    font-size: 1.9em;
+    color: #cc0033;
+    float: auto;
+    padding: .7em;
+}
+
+h2 
+{
+    margin: 0;
+    font-family: 'Volkhov', serif;
+    font-size: 1.9em;
+    color: #00cc00;
+    float: auto;
+    padding: .7em;
+    text-align: center;
+}
+
+h3
+{
+    margin: 0;
+    font-family: 'Volkhov', serif;
+    font-size: 1.5em;
+    color: #adcc00;
+    float: auto;
+    padding: .7em;
+    align-content: center;
+    text-align: center;
+}
+
+#motto
+{
+    text-align: left;
+    bottom: 1em;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+nav 
+{	
+    margin: 0 auto;	
+    max-width: 80em; 
+    background-color: #ff9901;
+    text-align: center;
+}
+
+.navigation 
+{ 
+    list-style: none;
+    text-align: center;
+    background-color: #ff9901;
+    text-align: center; 
+}
+
+.navigation li:first-child 
+{ 
+    display: block;
+}
+
+.navigation li 
+{ 
+    display: none;
+}
+
+.navigation a 
+{	
+    display: block;	
+    color: #000000; 
+    padding: .75rem;	
+    text-align: center;	
+    text-decoration: none;
+}
+
+.navigation a:hover 
+{	
+    color: #000; 
+    background-color: rgba(218, 233, 211, 0.692); 
+    font-weight: 700;	
+}
+
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
+  <ul class="navigation responsive">
+  */
+.responsive li 
+{ 
+    display: block; 
+}
+
+/* Media Query for medium + screens*/
+@media only screen and (min-width: 35em) 
+{
+    .navigation li:first-child 
+    { 
+        display: none;	
+    }
+
+    .navigation li 
+    { 
+        display: inline-block; 
+        margin-right: 1rem;
+    }
+
+    .navigation li a 
+    { 
+        color: white;
+    }
+}
+ /*End of the nav bar */
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li
+{
+    display: inline;
+}
+
+#weathersum
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    top: 255px;
+    background-color: rgba(226, 228, 133, 0.733);
+    opacity: 50%;
+    width: 250px;
+    padding: 10px;
+    border: 25px soild white;
+    margin: 25px;
+} 
+
+.article
+{
+    margin: 1em .5em;
+    color: #ffffff;
+}
+/*
+.Hero
+{
+    width: 49em;
+    height: auto;
+    padding: 5px;
+    margin: 0;
+}
+
+/*
+* Form and table creation for tablebuild.html
+*/
+
+form
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+table
+{
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px;
+    margin: 5px;
+    font-family: Ubuntu, sans-serif;
+    text-align: center;
+    /*color: #e7f0ed, #e7ffed, #628ca6, #7fb9c2*/
+    box-shadow: 10px 10px 10px rgb(41, 59, 68);
+}
+
+table, tr, td
+{
+    border: 1px gray
+}
+
+thead tr:nth-child(1)
+{
+    background-color: #7FB9C2;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+thead tr:nth-of-type(2)
+{
+    background-color: #628CA6;
+    color: white;
+}
+
+tbody tr:nth-child(odd)
+{
+    background: #E7F0ED;
+}
+
+tbody tr:nth-child(even)
+{
+    background: #E7FFED;
+}
+
+tfoot tr:nth-of-type(1)
+{
+    background: #7FB9C2;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+th
+{
+    border: 1px solild gray;
+    text-align: center
+}
+ /*end of tablebuild.html*/
+
+#darkblue
+{
+    background-color: #628CA6;
+}
+
+.grid 
+{
+    display: grid;
+    grid-template-columns: 280px 280px 280px;
+    grid-template-rows: 250px 250px;
+    /*grid-gap: 5px;*/
+
+}
+
+#gridwidth
+{
+    width: 235px;
+    height: 183.05px;
+}
+
+.norm:hover
+{
+    box-shadow: 0 0 50px #333;
+}
+
+figure
+{
+    margin: 0px;
+}
+
+figcaption
+{
+    font-size: small;
+    color: white;
+    text-align: center;
+}
+
+script
+{
+    color: black;
+    font-family: serif;
+}
+
+footer 
+{
+    padding: 1em;
+    text-align: center
+    
+}
+
+a:link { color: blue;}
+a:visited { color: purple;}
+a:focus { color: green;}
+a:hover { color: red;}
+a:active { color: orange;}
