@@ -7,15 +7,15 @@ var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
     request.onload = function() {
         var prestonWeather = request.resopnse;
         populateHeader(prestonWeather);
-        //showTowns(towns);
+        showTowns(prestonWeather);
     }
 
     //Work on this bottom part
     function prestonWeather(jsonObj) {
-        var data = document.getElementById('PrestonInfo');
-        var towns = jsonObj['towns'];
-    }
-    
+        var myH1 = document.createElement('h1');
+        myH1.textContent = jsonObj['towns'];
+        header.appendChild(myH1);
+
     for (var i = 0; i < towns.length; i++) {
         var name = towns[i].name;
         var myH2 = document.createElement('h2');
@@ -31,6 +31,7 @@ var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
         myPara4.textContent = 'Annual Rainfall: ' + towns[i].averageRainfall;
 
         document.getElementById('prestonMoto').appendChild(myPara1);
+        document.getElementById('prestonMoto').innerHTML = towns[i];
     }
       /*  if(name === 'Preston') {
             var townName = documents.createElement('p');
