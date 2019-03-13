@@ -1,51 +1,96 @@
 var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-    var request = new XMLHttpRequest();
-    request.open('GET', requestURL);
-    request.responseType = 'json';
-    request.send();
 
-    request.onload = function() {
-        var prestonWeather = request.resopnse;
-        populateHeader(prestonWeather);
-        showTowns(prestonWeather);
-    }
+var request = new XMLHttpRequest();
 
-    //Work on this bottom part
-    function prestonWeather(jsonObj) {
-        var myH1 = document.createElement('h1');
-        myH1.textContent = jsonObj['towns'];
-        header.appendChild(myH1);
+request.open('GET', requestURL);
 
-    for (var i = 0; i < towns.length; i++) {
-        var name = towns[i].name;
-        var myH2 = document.createElement('h2');
-        var myPara1 = document.createElement('p');
-        var myPara2 = document.createElement('p');
-        var myPara3 = document.createElement('p');
-        var myPara4 = document.createElement('p');
+request.responseType = 'json';
+request.send();
 
-        myH2.textContent = towns[i].name;
-        myPara1.textContent = 'Motto: ' + towns[i].motto;
-        myPara2.textContent = 'Year Founded: ' + towns[i].yearFounded;
-        myPara3.textContent = 'Current Population: ' + towns[i].currentPopulation;
-        myPara4.textContent = 'Annual Rainfall: ' + towns[i].averageRainfall;
+request.onload = function() {
+    var prestonInfo = request.response;
+    var sodaSpringsInfo = request.response;
+    var fishHavenInfo = request.response;
+    populatePreston(prestonInfo);
+    populateSodaSprings(sodaSpringsInfo);
+    populateFishHaven(fishHavenInfo);
+    
+};
+// Preston
+function populatePreston(jsonObj){
+    var towns = jsonObj.towns;
 
-        document.getElementById('prestonMoto').appendChild(myPara1);
-        document.getElementById('prestonMoto').innerHTML = towns[i];
-    }
-      /*  if(name === 'Preston') {
-            var townName = documents.createElement('p');
+    for (var i = 0; i < towns.length; i++){
+       var name = towns[i].name;
+        if (name === "Preston"){
+            var townName = document.createElement("h3");
             townName.textContent = towns[i].name;
-
-            document.getElementById('prestonMoto').appendChild(townName);
+          var townMotto = document.createElement("p");
+            townMotto.textContent = "Motto: " + towns[i].motto;
+          var yearFounded = document.createElement("p");
+            yearFounded.textContent = "Year Founded: " + towns[i].yearFounded;
+          var currentPopulation = document.createElement("p");
+            currentPopulation.textContent = "Current Population: " + towns[i].currentPopulation;
+          var averageRainfall = document.createElement("p");
+            averageRainfall.textContent = "Average Rainfall: " + towns[i].averageRainfall;
+            
+          document.getElementById("prestonMoto").appendChild(townName);
+          document.getElementById("prestonMoto").appendChild(townMotto);
+          document.getElementById("prestonMoto").appendChild(yearFounded);
+          document.getElementById("prestonMoto").appendChild(currentPopulation);
+          document.getElementById("prestonMoto").appendChild(averageRainfall);
         }
+    }
+}
+// Soda Springs
+function populateSodaSprings(jsonObj){
+    var towns = jsonObj.towns;
 
-        
-/*
-        for (var i = 0; i < heroes.length; i++) {
-        var myArticle = document.createElement('article');
- var myH2 = document.createElement('h2');
- var myPara1 = document.createElement('p');
- var myPara2 = document.createElement('p');
- var myPara3 = document.createElement('p');
- var myList = document.createElement('ul');
+    for (var i = 0; i < towns.length; i++){
+       var name = towns[i].name;
+        if (name === "Soda Springs"){
+            var townName = document.createElement("h3");
+            townName.textContent = towns[i].name;
+          var townMotto = document.createElement("p");
+            townMotto.textContent = "Motto: " + towns[i].motto;
+          var yearFounded = document.createElement("p");
+            yearFounded.textContent = "Year Founded: " + towns[i].yearFounded;
+          var currentPopulation = document.createElement("p");
+            currentPopulation.textContent = "Current Population: " + towns[i].currentPopulation;
+          var averageRainfall = document.createElement("p");
+            averageRainfall.textContent = "Average Rainfall: " + towns[i].averageRainfall;
+            
+          document.getElementById("sodaMoto").appendChild(townName);
+          document.getElementById("sodaMoto").appendChild(townMotto);
+          document.getElementById("sodaMoto").appendChild(yearFounded);
+          document.getElementById("sodaMoto").appendChild(currentPopulation);
+          document.getElementById("sodaMoto").appendChild(averageRainfall);
+        }
+    }
+}
+// Fish Haven
+function populateFishHaven(jsonObj){
+    var towns = jsonObj.towns;
+
+    for (var i = 0; i < towns.length; i++){
+       var name = towns[i].name;
+        if (name === "Fish Haven"){
+            var townName = document.createElement("h3");
+            townName.textContent = towns[i].name;
+          var townMotto = document.createElement("p");
+            townMotto.textContent = "Motto: " + towns[i].motto;
+          var yearFounded = document.createElement("p");
+            yearFounded.textContent = "Year Founded: " + towns[i].yearFounded;
+          var currentPopulation = document.createElement("p");
+            currentPopulation.textContent = "Current Population: " + towns[i].currentPopulation;
+          var averageRainfall = document.createElement("p");
+            averageRainfall.textContent = "Average Rainfall: " + towns[i].averageRainfall;
+            
+          document.getElementById("fishMoto").appendChild(townName);
+          document.getElementById("fishMoto").appendChild(townMotto);
+          document.getElementById("fishMoto").appendChild(yearFounded);
+          document.getElementById("fishMoto").appendChild(currentPopulation);
+          document.getElementById("fishMoto").appendChild(averageRainfall);
+        }
+    }
+} 
