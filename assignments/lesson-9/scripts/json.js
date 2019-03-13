@@ -1,5 +1,5 @@
 var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-
+ 
 var request = new XMLHttpRequest();
 
 request.open('GET', requestURL);
@@ -16,7 +16,7 @@ request.onload = function() {
     populateFishHaven(fishHavenInfo);
     
 };
-// Preston
+// Preston information
 function populatePreston(jsonObj){
     var towns = jsonObj.towns;
 
