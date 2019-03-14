@@ -14,7 +14,7 @@ body
     margin-left: auto;
     margin-right: auto;
 }
-/*
+
 #header
 {
     width: 50em;
@@ -88,6 +88,7 @@ h3
     flex-direction: row-reverse;
     justify-content: center;
 }
+
 nav 
 {	
     margin: 0 auto;	
@@ -130,7 +131,7 @@ nav
     font-weight: 700;	
 }
 
-/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.*/
   <ul class="navigation responsive">
   
 .responsive li 
@@ -138,7 +139,7 @@ nav
     display: block; 
 }
 
-/* Media Query for medium + screens
+/* Media Query for medium + screens*/
 @media only screen and (min-width: 35em) 
 {
     .navigation li:first-child 
@@ -157,7 +158,7 @@ nav
         color: white;
     }
 }
- /*End of the nav bar 
+ /*End of the nav bar */
 ul
 {
     list-style-type: none;
@@ -185,11 +186,60 @@ li
     border: 25px soild white;
     margin: 25px;
 } 
+/* Json Weather for each city set up*/
+.json
+{
+    margin-left: auto;
+    margin-right: auto;
+}
 
+
+.cityWeatherBox
+{
+  width: 50em;
+  float: left;
+  background-color: #6e6a6a49;
+  border: 3px black;
+}
+
+.citySet
+{
+  float: left;
+  width: 266px;
+  height: 240px;
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  text-align: center;
+}
+
+.citySet #prestonMoto
+{
+  width: 241px;
+  border: 7px solid green;
+  padding: 5px;
+  margin: 0px;
+}
+.citySet #sodaMoto
+{
+  width: 241px;
+  border: 7px solid green;
+  padding: 5px;
+  margin: 0px;
+}
+.citySet #fishMoto
+{
+  width: 241px;
+  border: 7px solid green;
+  padding: 5px;
+  margin: 0px;
+}
+/* end of Json Weather
 .article
 {
     margin: 1em .5em;
     color: #ffffff;
+    top: -20px;
 }
 /*
 .Hero
@@ -202,7 +252,7 @@ li
 
 /*
 * Form and table creation for tablebuild.html
-
+*/
 
 form
 {
@@ -220,7 +270,7 @@ table
     margin: 5px;
     font-family: Ubuntu, sans-serif;
     text-align: center;
-    /*color: #e7f0ed, #e7ffed, #628ca6, #7fb9c2
+    /*color: #e7f0ed, #e7ffed, #628ca6, #7fb9c2*/
     box-shadow: 10px 10px 10px rgb(41, 59, 68);
 }
 
@@ -266,7 +316,7 @@ th
     border: 1px solild gray;
     text-align: center
 }
- /*end of tablebuild.html
+ /*end of tablebuild.html*/
 
 #darkblue
 {
@@ -278,7 +328,7 @@ th
     display: grid;
     grid-template-columns: 280px 280px 280px;
     grid-template-rows: 250px 250px;
-    /*grid-gap: 5px;
+    /*grid-gap: 5px;*/
 
 }
 

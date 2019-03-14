@@ -16,7 +16,7 @@ body
     margin-right: auto;
 }
 
-#header .topnav ul li
+#header ul li
 {
     display: flex;
     justify-content: center;
@@ -28,7 +28,7 @@ body
     float: left;
     width: 180px;
     height: auto;
-    padding: 5px;
+    padding: 2px;
     margin: 0;
     bottom: .2em
 
@@ -45,14 +45,13 @@ body
     float: right;
     width: 150px;
     height: auto;
-    padding: 5px;
+    padding: 2px;
     margin: 0;
-    
 }
 
 h1 
 {
-    margin: 0;
+    
     font-family: 'Volkhov', serif;
     font-size: 1.9em;
     color: #cc0033;
@@ -77,41 +76,76 @@ h2
     bottom: 1em;
 }
 
-.topnav
-{
-    width: 49em;
-    padding: .1em .5em;
+nav 
+{	
+    margin: 0 auto;	
+    max-width: 80em; 
     background-color: #ff9901;
-    overflow: hidden;
-}
-
-.topnav a 
-{
-    float: left;
-    display: block;
-    color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
 }
 
-topnav a:hover 
-{
-    background-color: #ddd;
-    color: black;
+.navigation 
+{ 
+    list-style: none;
+    text-align: center;
+    background-color: #ff9901;
+    text-align: center; 
 }
 
-.active 
-{
-    background-color: #4CAF50;
-    color: white;
+.navigation li:first-child 
+{ 
+    display: block;
 }
 
-.topnav .icon 
-{
+.navigation li 
+{ 
     display: none;
 }
+
+.navigation a 
+{	
+    display: block;	
+    color: #000000; 
+    padding: .75rem;	
+    text-align: center;	
+    text-decoration: none;
+}
+
+.navigation a:hover 
+{	
+    color: #000; 
+    background-color: rgba(218, 233, 211, 0.692); 
+    font-weight: 700;	
+}
+
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.*/
+  <ul class="navigation responsive">
+  
+.responsive li 
+{ 
+    display: block; 
+}
+
+/* Media Query for medium + screens*/
+@media only screen and (min-width: 35em) 
+{
+    .navigation li:first-child 
+    { 
+        display: none;	
+    }
+
+    .navigation li 
+    { 
+        display: inline-block; 
+        margin-right: 1rem;
+    }
+
+    .navigation li a 
+    { 
+        color: white;
+    }
+}
+ /*End of the nav bar */
 
 ul
 {
@@ -148,12 +182,13 @@ li a
     margin: 25px;
 
 } 
+
 .article
 {
     margin: 1em .5em;
     color: #ffffff;
 }
-
+/*
 .Hero
 {
     width: 49em;
@@ -161,14 +196,12 @@ li a
     padding: 5px;
     margin: 0;
 }
-
+*/
 .grid 
 {
     display: grid;
     grid-template-columns: 280px 280px;
     grid-template-rows: 250px;
-    /*grid-gap: 5px;*/
-
 }
 
 #gridwidth
@@ -210,4 +243,3 @@ a:visited { color: purple;}
 a:focus { color: green;}
 a:hover { color: red;}
 a:active { color: orange;}
-

@@ -178,15 +178,6 @@ h4
     text-align: justify;
 }
 
-img
-{
-    width: 320px;
-    height: auto;
-    border: 0;
-    padding: 0;
-    margin: 0;
-}
-
 .grid 
 {
     display: grid;

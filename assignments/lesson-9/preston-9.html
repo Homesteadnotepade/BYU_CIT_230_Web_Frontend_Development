@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>SodaFishPrestonID</title>
-    <meta name="description" content="W04 Town Page Build">
+    <meta name="description" content="W09 Town Page Build">
     <link rel="stylesheet"  href="css/normalize.css">
-    <!--<link rel="stylesheet"  href="css/small-9.css">
-    <link rel="stylesheet"  media="screen and (min-width: 501px)" href="css/medium-9.css">-->
-    <link rel="stylesheet"  media="screen and (min-width: 801px)" href="css/large-9.css">
+    <link rel="stylesheet"  media="screen and (min-width: 320px)" href="css/small-9.css">
+    <link rel="stylesheet"  media="screen and (min-width: 401px)" href="css/medium-9.css">
+    <link rel="stylesheet"  media="screen and (min-width: 701px)" href="css/large-9.css">
     <link href="https://fonts.googleapis.com/css?family=Volkhov" rel="stylesheet">
 </head>
 <body>
@@ -41,21 +41,21 @@
                 <span id="weatheroutput"></span>
             </div>
             <picture>
-                <source srcset="images/Optimizedhero400.jpg" media="(min-width: 200px) and (max-width: 599px)">
-                        <source srcset="images/Optimizedhero600.jpg" media="(min-width: 700px) and (max-width: 899px)">
-                            <source srcset="images/Optimizedhero800.jpeg" media="(min-width: 900px)">
-                <img src="images/Optimizedhero250.jpeg" id="Hero" alt="logo name">
+                <source srcset="images/Optimizedhero400.jpeg" media="(min-width: 200px) and (max-width: 499px)">
+                <source srcset="images/Optimizedhero600.jpeg" media="(min-width: 500px) and (max-width: 799px)">
+                <source srcset="images/Optimizedhero800.jpeg" media="(min-width: 801px)">
+                <img src="images/Optimizedhero250.jpg" id="Hero" alt="Hero Image">
             </picture>
         
             <div class="json">
                 <div class="cityWeatherBox">
-                    <div id="PrestonInfo">
+                    <div class="citySet">
                         <div id="prestonMoto"></div>
                     </div>
-                    <div id="SodaInfo">
+                    <div class="citySet">
                         <div id="sodaMoto"></div>
                     </div>
-                    <div id="FishInfo">
+                    <div class="citySet">
                          <div id="fishMoto"></div>
                     </div>
                 </div>
@@ -74,9 +74,9 @@
             <span id="dateoutput"></span>
         </footer>
     </div>
+    <sctipt src="scripts/townInfo.js"></sctipt>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/currentdate.js"></script>
-    <sctipt src="script/hamburger.js"></sctipt>
-    <sctipt src="scripts/json.js"></sctipt>
+    <sctipt src="scripts/hamburger.js"></sctipt>
 </body>
 </html>
