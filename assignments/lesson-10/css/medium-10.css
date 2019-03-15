@@ -1,0 +1,245 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 32px;
+    font-family: Verdana;
+    background-color: #074e94;  
+      
+}
+
+.container  
+{
+    width: 50em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header ul li
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#headerimg 
+{ 
+    float: left;
+    width: 180px;
+    height: auto;
+    padding: 2px;
+    margin: 0;
+    bottom: .2em
+
+}
+
+#header,#footer
+{
+    background: #FFCC66;
+    
+}
+
+#current
+{
+    float: right;
+    width: 150px;
+    height: auto;
+    padding: 2px;
+    margin: 0;
+}
+
+h1 
+{
+    
+    font-family: 'Volkhov', serif;
+    font-size: 1.9em;
+    color: #cc0033;
+    float: auto;
+    padding: .7em;
+}
+
+h2 
+{
+    margin: 0;
+    font-family: 'Volkhov', serif;
+    font-size: 1.9em;
+    color: #00cc00;
+    float: auto;
+    padding: .7em;
+    
+}
+
+.motto
+{
+    text-align: center;
+    bottom: 1em;
+}
+
+nav 
+{	
+    margin: 0 auto;	
+    max-width: 80em; 
+    background-color: #ff9901;
+    text-align: center;
+}
+
+.navigation 
+{ 
+    list-style: none;
+    text-align: center;
+    background-color: #ff9901;
+    text-align: center; 
+}
+
+.navigation li:first-child 
+{ 
+    display: block;
+}
+
+.navigation li 
+{ 
+    display: none;
+}
+
+.navigation a 
+{	
+    display: block;	
+    color: #000000; 
+    padding: .75rem;	
+    text-align: center;	
+    text-decoration: none;
+}
+
+.navigation a:hover 
+{	
+    color: #000; 
+    background-color: rgba(218, 233, 211, 0.692); 
+    font-weight: 700;	
+}
+
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.*/
+  <ul class="navigation responsive">
+  
+.responsive li 
+{ 
+    display: block; 
+}
+
+/* Media Query for medium + screens*/
+@media only screen and (min-width: 35em) 
+{
+    .navigation li:first-child 
+    { 
+        display: none;	
+    }
+
+    .navigation li 
+    { 
+        display: inline-block; 
+        margin-right: 1rem;
+    }
+
+    .navigation li a 
+    { 
+        color: white;
+    }
+}
+ /*End of the nav bar */
+
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li
+{
+    float: left;
+}
+
+li a
+{
+    display: block;
+    padding: 8px;
+    background-color: #b8700500;
+}
+
+#weathersum
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    top: 255px;
+    background-color: rgba(226, 228, 133, 0.733);
+    opacity: 50%;
+    width: 250px;
+    padding: 10px;
+    border: 25px soild white;
+    margin: 25px;
+
+} 
+
+.article
+{
+    margin: 1em .5em;
+    color: #ffffff;
+}
+/*
+.Hero
+{
+    width: 49em;
+    height: auto;
+    padding: 5px;
+    margin: 0;
+}
+*/
+.grid 
+{
+    display: grid;
+    grid-template-columns: 280px 280px;
+    grid-template-rows: 250px;
+}
+
+#gridwidth
+{
+    width: 235px;
+    height: 183.05px;
+}
+
+.norm:hover
+{
+    box-shadow: 0 0 50px #333;
+}
+
+figure
+{
+    margin: 0px;
+}
+
+figcaption
+{
+    font-size: small;
+    color: white;
+}
+
+script
+{
+    color: black;
+    font-family: serif;
+}
+
+footer 
+{
+    padding: 1em;
+    text-align: center
+    
+}
+a:link { color: blue;}
+a:visited { color: purple;}
+a:focus { color: green;}
+a:hover { color: red;}
+a:active { color: orange;}
