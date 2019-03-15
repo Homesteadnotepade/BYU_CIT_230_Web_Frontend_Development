@@ -206,7 +206,7 @@ li
 {
   float: left;
   width: 266px;
-  height: 240px;
+  height: 350px;
   display: flex;
   justify-content: space-between;
   color: black;
@@ -235,6 +235,14 @@ li
   margin: 0px;
 }
 /* end of Json Weather*/
+
+.citySetImg
+{
+    float: left;
+    padding: 0px;
+
+}
+
 .article
 {
     margin: 1em .5em;
