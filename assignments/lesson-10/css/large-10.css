@@ -17,7 +17,7 @@ body
 
 #header
 {
-    width: 50em;
+    width: 49.35em;
     height: 7em;
     background: #FFCC66;
 }
@@ -43,8 +43,13 @@ body
     float: right;
     width: 150px;
     height: auto;
-    padding: 0px;
+    padding: 2px;
     margin: 0px; 
+    line-height: normal;
+    font-size: 12px;
+    background-color: rgba(127, 185, 194, 0.678);
+    text-align: center;
+    color: rgba(255, 255, 0, 0.74);
 }
 
 h1 
@@ -199,48 +204,98 @@ li
   width: 50em;
   float: left;
   background-color: #6e6a6a49;
-  border: 3px black;
+  border: 0px black;
+  height: 385px; /*gray background box*/
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  line-height: 80%;
+}
+
+.cityWeatherBox img
+{ 
+  float: left;
+  padding: 5px;
+  border: 0px black;
+  margin: 0px;
+  width: 255px;
+  position: relative;
+  top: -70px; /*postion of the images*/
 }
 
 .citySet
 {
   float: left;
-  width: 266px;
-  height: 350px;
+  width: 265px;
+  height: 255px; 
   display: flex;
   justify-content: space-between;
-  color: black;
   text-align: center;
+  
 }
 
 .citySet #prestonMoto
 {
   width: 241px;
-  border: 7px solid green;
+  border: 6px solid green;
   padding: 5px;
   margin: 0px;
+  height: 350px;
+  border: 1px solid;
+  box-shadow: 5px 10px #888888a2;
 }
 .citySet #sodaMoto
 {
   width: 241px;
-  border: 7px solid green;
+  border: 6px solid green;
   padding: 5px;
-  margin: 0px;
+  margin: 0px; 
+  height: 350px;
+  border: 1px solid;
+  box-shadow: 5px 10px #888888a2;
 }
 .citySet #fishMoto
 {
   width: 241px;
-  border: 7px solid green;
+  border: 6px solid green;
   padding: 5px;
   margin: 0px;
+  height: 350px;
+  border: 1px solid;
+  box-shadow: 5px 10px #888888a2;
+}
+
+.citySetImg 
+{
+    position: relative;
+    top: -20px;
+    width: 175px;
+    height: auto;
 }
 /* end of Json Weather*/
+
+table 
+{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th 
+{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 1px;
+    text-align: center;
+    height: 20px;
+}
+
 .article
 {
     margin: 1em .5em;
     color: #ffffff;
-    top: -20px;
+    top: 0px;
 }
+
 /*
 .Hero
 {
