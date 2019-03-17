@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Contact Form</title>
-    <meta name="description" content="W04 Town Page Build">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/medium-9.css">
+    <meta name="description" content="Storm Center">
+    <link rel="stylesheet"  href="css/normalize.css">
+    <link rel="stylesheet"  media="screen and (min-width: 320px)" href="css/small-10.css">
+    <link rel="stylesheet"  media="screen and (min-width: 401px)" href="css/medium-10.css">
+    <link rel="stylesheet"  media="screen and (min-width: 701px)" href="css/large-10.css">
     <link href="https://fonts.googleapis.com/css?family=Volkhov" rel="stylesheet">
-    <link rel="stylesheet" href="css/large-9.css">
 </head>
 <body>
     <div class="container">
@@ -18,17 +19,18 @@
                 <h1>SodaFishPreston, ID Weather</h1>
                 <div class="motto">Weather news happens... or not!</div>
             </div>
-            <script src="scripts/hamburger.js" class="icon"> </script>
-                <div class="topnav" id="myTopnav">
-                    <ul>
-                        <li><a href="preston-8.html">Home</a></li>
-                        <li><a href="#preston">Preston</a></li>
-                        <li><a href="#sodas">Soda Springs</a></li>
-                        <li><a href="#fish">Fish Haven</a></li>
-                        <li><a href="stormcenter.html" class="active">Storm Center</a></li>
-                        <li><a href="gallery-8.html">Gallery</a></li>
-                    </ul>
-                </div>
+            
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="preston-10.html">Preston</a></li>
+                    <li><a href="#sodas">Soda Springs</a></li>
+                    <li><a href="#fish">Fish Haven</a></li>
+                    <li><a href="stormcenter.html" class="active">Storm Center</a></li>
+                    <li><a href="gallery-10.html">Gallery</a></li>                        
+                </ul>                         
+            </nav>
             <h2>Storm Center</h2>
             <h3>Contact Form</h3>
             <form>
@@ -89,9 +91,11 @@
             <br>
             <footer id="footer">
                 <p>&copy; Joseph "Jay" Stay, Arizona <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
-               <div id="dateoutput"></div>
+                <p>OpenWeatherMap was used on this site. Visit them at <a href="https://openweathermap.org/">OpenWeatherMap.org</a></p>
+                <span id="dateoutput"></span>
             </footer>
         </div>
         <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js" class="icon"> </script>
     </body>
     </html>

@@ -17,9 +17,10 @@ body
 
 #header
 {
-    width: 49.35em;
+    width: 50em;
     height: 7em;
     background: #FFCC66;
+    text-align: center;
 }
 
 #headerimg 
@@ -96,14 +97,14 @@ h3
 
 nav 
 {	
-    margin: 0 auto;	
-    max-width: 80em; 
+    margin: 0 auto;	 
     background-color: #ff9901;
     text-align: center;
 }
 
-.navigation 
+ul .navigation 
 { 
+    max-width: 80em;
     list-style: none;
     text-align: center;
     background-color: #ff9901;
