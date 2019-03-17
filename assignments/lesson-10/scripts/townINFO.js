@@ -16,7 +16,7 @@ request.onload = function() {
     populateFishHaven(fishHavenInfo);
     
 };
-// Preston information
+// Preston information updated
 function populatePreston(jsonObj){
     var towns = jsonObj.towns;
 
