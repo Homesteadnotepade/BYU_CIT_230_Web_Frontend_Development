@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Photo Gallery</title>
+    <meta name="description" content="W04 Town Page Build">
+    <link rel="stylesheet"  href="css/normalize.css">
+    <link rel="stylesheet"  media="screen and (min-width: 414px) and (max-width: 736)" href="css/small.css">
+    <link rel="stylesheet"  media="screen and (min-width: 737px) and max-width: 1024)" href="css/medium.css">
+    <link rel="stylesheet"  media="screen and (min-width: 1025px)" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Volkhov" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+            <div id="header">
+                <img src="images/landscape.jpg" id="headerimg" alt="Landscape">
+                <img src="images/CurrentWeather.png" id="current" class="hidden" alt="Current Conditions">
+                <h1>SodaFishPreston, ID Weather</h1>
+                <div class="motto">Weather news happens... or not!</div>
+            </div>
+            
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="preston.html">Preston</a></li>
+                    <li><a href="sodaSprings.html">Soda Springs</a></li>
+                    <li><a href="fishHaven.html">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>                        
+                </ul>                         
+            </nav>
+            <h2>Weather Gallery</h2>
+            <div id="grid">
+                    <figure>
+                        <img class="norm" src="images/hot.jpg" id="gridwidth" alt="Hot Desert Road Beating down on you">
+                        <figcaption>Hot Desert Road Beating down on you</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="norm" src="images/lightning.jpg" id="gridwidth" alt="Really Cool Lighting Storm above your head!">
+                        <figcaption>Really Cool Lighting Storm above your head!</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="norm" src="images/nature.jpg" id="gridwidth" alt="Wonderful cloudy skys filled with rays!">
+                        <figcaption>Wonderful cloudy skys filled with rays!</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="norm" src="images/rain.jpg" id="gridwidth" alt="Nice rain fall in the distance.">
+                        <figcaption>Nice rain fall in the distance.</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="norm" src="images/snow.jpg" id="gridwidth" alt="Cold Snow in the mountains.">
+                        <figcaption>Cold Snow in the mountains.</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="norm" src="images/sunny.jpg" id="gridwidth" alt="Nice Sunny Day to be out in nature.">
+                        <figcaption>Nice Sunny Day to be out in nature.</figcaption>
+                    </figure>
+                </div>
+
+
+                <footer id="footer">
+                    <p>&copy; Joseph "Jay" Stay, Arizona <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+                    <p>OpenWeatherMap was used on this site. Visit them at <a href="https://openweathermap.org/">OpenWeatherMap.org</a></p>
+                    <span id="dateoutput"></span>
+                </footer>
+        </div>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js" class="icon"> </script>
+    </body>
+    </html>

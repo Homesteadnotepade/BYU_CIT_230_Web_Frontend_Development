@@ -11,17 +11,11 @@ body
 
 .container  
 {
-    width: 50em;
+    width: 25em;
     margin-left: auto;
     margin-right: auto;
 }
 
-#header ul li
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 #headerimg 
 { 
@@ -45,8 +39,14 @@ body
     float: right;
     width: 150px;
     height: auto;
+    margin: 12px; 
+    border: 6px;
     padding: 2px;
-    margin: 0;
+    line-height: normal;
+    font-size: 12px;
+    background-color: rgba(127, 185, 194, 0.678);
+    text-align: center;
+    color: rgba(255, 255, 0, 0.74);
 }
 
 h1 
@@ -56,7 +56,10 @@ h1
     font-size: 1.9em;
     color: #cc0033;
     float: auto;
-    padding: .7em;
+    padding: .8em;
+    position: relative;
+    right: -6px;
+    
 }
 
 h2 
@@ -67,13 +70,17 @@ h2
     color: #00cc00;
     float: auto;
     padding: .7em;
+    font: center;
+    text-align: center;
     
 }
 
-.motto
+#motto
 {
     text-align: center;
     bottom: 1em;
+    position: relative;
+    right: 5px;
 }
 
 nav 
@@ -82,6 +89,16 @@ nav
     max-width: 80em; 
     background-color: #ff9901;
     text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+ul .navigation 
+{ 
+    list-style: none;
+    text-align: center;
+    
+
 }
 
 .navigation 
@@ -167,6 +184,11 @@ li a
     background-color: #b8700500;
 }
 
+#Hero
+{
+    
+}
+
 #weathersum
 {
     display: flex;
@@ -188,15 +210,114 @@ li a
     margin: 1em .5em;
     color: #ffffff;
 }
-/*
-.Hero
+
+/* Json Weather for each city set up*/
+
+
+.cityWeatherBox
 {
-    width: 49em;
-    height: auto;
-    padding: 5px;
-    margin: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50em;
+  background-color: #6e6a6a49;
+  border: 0px black;
+  height: 385px; /*gray background box*/
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  line-height: 80%;
 }
-*/
+
+.cityWeatherBox img
+{ 
+  float: left;
+  padding: 5px;
+  border: 0px black;
+  margin: 0px;
+  width: 255px;
+  position: relative;
+  top: -70px; /*postion of the images*/
+}
+
+.citySet
+{
+  float: left;
+  width: 265px;
+  height: 255px; 
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  
+}
+
+.citySetCity /*lay out for the 3 boxes*/
+{
+    width: 241px;
+  border: 6px solid green;
+  padding: 5px;
+  margin: 0px;
+  height: 350px;
+  border: 1px solid;
+  box-shadow: 5px 10px #888888a2;
+}
+/*end of Json Weather*/
+
+table
+{
+    width: 50em;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px;
+    margin: 5px;
+    font-family: Ubuntu, sans-serif;
+    text-align: center;
+    box-shadow: 10px 10px 10px rgb(41, 59, 68);
+}
+
+table, tr, td
+{
+    border: 1px gray
+}
+
+thead tr:nth-child(1)
+{
+    background-color: #7FB9C2;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+thead tr:nth-of-type(2)
+{
+    background-color: #628CA6;
+    color: white;
+}
+
+tbody tr:nth-child(odd)
+{
+    background: #E7F0ED;
+}
+
+tbody tr:nth-child(even)
+{
+    background: #E7FFED;
+}
+
+tfoot tr:nth-of-type(1)
+{
+    background: #7FB9C2;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+th
+{
+    border: 1px solild gray;
+    text-align: center
+}
+ /*end of tablebuild.html*/
+
 .grid 
 {
     display: grid;

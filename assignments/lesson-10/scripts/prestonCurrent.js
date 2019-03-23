@@ -10,8 +10,7 @@ CurrentTemp.onload =  function () {
 
     
     document.getElementById('currently').innerHTML = CurrentPrestonTemp.weather[0].main;
-    document.getElementById('high').innerHTML = CurrentPrestonTemp.main.temp_max;
-    
+    document.getElementById('high').innerHTML = CurrentPrestonTemp.main.temp_max;    
     document.getElementById('humidity').innerHTML = CurrentPrestonTemp.main.humidity;
     document.getElementById('wind_speed').innerHTML = CurrentPrestonTemp.wind.speed;
 

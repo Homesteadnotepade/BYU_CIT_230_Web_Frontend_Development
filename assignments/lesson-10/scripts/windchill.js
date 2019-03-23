@@ -7,9 +7,11 @@ windChillDRequest.onload =  function () {
     let chillWindData = JSON.parse(windChillDRequest.responseText);
     console.log(chillWindData);
 
-                document.getElementById('tempature').innerHTML = chillWindData.main.temp;
-                document.getElementById('windSpeed').innerHTML = chillWindData.wind.speed;
-                var outcome = windChill(tempature, windSpeed);
+                document.getElementById('temp').innerHTML = chillWindData.main.temp;
+                document.getElementById('wind_speed').innerHTML = chillWindData.wind.speed;
+               // var tempature = document.getElementById('tempature').innerHTML = chillWindData.main.temp;
+               // var windSpeed = document.getElementById('windSpeed').innerHTML = chillWindData.wind.speed;
+                var outcome = windChill(temp, wind_speed);
 
                 document.getElementById('weatheroutput').innerHTML = results;
 }

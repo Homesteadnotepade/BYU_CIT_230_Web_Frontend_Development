@@ -1,3 +1,4 @@
+
 body
 {
     margin: 0;
@@ -10,15 +11,15 @@ body
 
 .container  
 {
-    width: 50em;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
-#header
+#header 
 {
-    width: 50em;
-    height: 7em;
+    width: 100%;
+    height: 11em;
     background: #FFCC66;
     text-align: center;
 }
@@ -26,10 +27,10 @@ body
 #headerimg 
 { 
     float: left;
-    width: 180px;
+    width: 260px;
     height: auto;
-    padding: 5px;
-    margin: 0;
+    padding: 15px;
+    margin: 5;
     bottom: .2em;
 }
 
@@ -44,8 +45,9 @@ body
     float: right;
     width: 150px;
     height: auto;
-    padding: 2px;
-    margin: 0px; 
+    margin: 20px;
+    border: 2px;
+    padding: 6px; 
     line-height: normal;
     font-size: 12px;
     background-color: rgba(127, 185, 194, 0.678);
@@ -57,7 +59,7 @@ h1
 {
     margin: 0;
     font-family: 'Volkhov', serif;
-    font-size: 1.9em;
+    font-size: 2.9em;
     color: #cc0033;
     float: auto;
     padding: .7em;
@@ -69,7 +71,7 @@ h2
     font-family: 'Volkhov', serif;
     font-size: 1.9em;
     color: #00cc00;
-    float: auto;
+    text-align: center;
     padding: .7em;
     text-align: center;
 }
@@ -88,27 +90,25 @@ h3
 
 #motto
 {
-    text-align: left;
     bottom: 1em;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
+    position: relative;
+    left: -90px;
 }
 
 nav 
 {	
-    margin: 0 auto;	 
+    position: relative;
+    top: -20px;
+    max-width: 100%; 
     background-color: #ff9901;
     text-align: center;
 }
 
 ul .navigation 
 { 
-    max-width: 80em;
+    max-width: 50em;
     list-style: none;
     text-align: center;
-    background-color: #ff9901;
-    text-align: center; 
 }
 
 .navigation li:first-child 
@@ -137,7 +137,8 @@ ul .navigation
     font-weight: 700;	
 }
 
-/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.*/
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to 
+display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.*/
   <ul class="navigation responsive">
   
 .responsive li 
@@ -165,13 +166,6 @@ ul .navigation
     }
 }
  /*End of the nav bar */
-ul
-{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
 
 li
 {
@@ -184,7 +178,8 @@ li
     flex-direction: column;
     justify-content: flex-end;
     position: absolute;
-    top: 255px;
+    left: 300px;
+    top: 325px;
     background-color: rgba(226, 228, 133, 0.733);
     opacity: 50%;
     width: 250px;
@@ -192,18 +187,26 @@ li
     border: 25px soild white;
     margin: 25px;
 } 
-/* Json Weather for each city set up*/
-.json
+
+picture
 {
+    display: block;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    justify-content: center;
 }
+
+
+/* Json Weather for each city set up*/
 
 
 .cityWeatherBox
 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 50em;
-  float: left;
   background-color: #6e6a6a49;
   border: 0px black;
   height: 385px; /*gray background box*/
@@ -234,9 +237,9 @@ li
   
 }
 
-.citySet #prestonMoto
+.citySetCity /*lay out for the 3 boxes*/
 {
-  width: 241px;
+    width: 241px;
   border: 6px solid green;
   padding: 5px;
   margin: 0px;
@@ -244,35 +247,7 @@ li
   border: 1px solid;
   box-shadow: 5px 10px #888888a2;
 }
-.citySet #sodaMoto
-{
-  width: 241px;
-  border: 6px solid green;
-  padding: 5px;
-  margin: 0px; 
-  height: 350px;
-  border: 1px solid;
-  box-shadow: 5px 10px #888888a2;
-}
-.citySet #fishMoto
-{
-  width: 241px;
-  border: 6px solid green;
-  padding: 5px;
-  margin: 0px;
-  height: 350px;
-  border: 1px solid;
-  box-shadow: 5px 10px #888888a2;
-}
-
-.citySetImg 
-{
-    position: relative;
-    top: -20px;
-    width: 175px;
-    height: auto;
-}
-/* end of Json Weather*/
+/*end of Json Weather*/
 
 table 
 {
@@ -295,15 +270,6 @@ td, th
     margin: 1em .5em;
     color: #ffffff;
     top: 0px;
-}
-
-/*
-.Hero
-{
-    width: 49em;
-    height: auto;
-    padding: 5px;
-    margin: 0;
 }
 
 /*

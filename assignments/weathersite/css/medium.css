@@ -1,0 +1,393 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 32px;
+    font-family: Verdana;
+    background-color: #074e94;  
+      
+}
+
+.container  
+{
+    width: 47.813em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#headerimg 
+{ 
+    float: left;
+    width: 180px;
+    height: auto;
+    padding: 2px;
+    margin: 0;
+    bottom: .2em
+
+}
+
+#header,#footer
+{
+    background: #FFCC66;
+    
+}
+
+#current
+{
+    float: right;
+    width: 150px;
+    height: auto;
+    margin: 12px; 
+    border: 6px;
+    padding: 2px;
+    line-height: normal;
+    font-size: 12px;
+    background-color: rgba(127, 185, 194, 0.678);
+    text-align: center;
+    color: rgba(255, 255, 0, 0.74);
+}
+
+h1 
+{
+    
+    font-family: 'Volkhov', serif;
+    font-size: 1.9em;
+    color: #cc0033;
+    float: auto;
+    padding: .8em;
+    position: relative;
+    right: -6px;
+    
+}
+
+h2 
+{
+    margin: 0;
+    font-family: 'Volkhov', serif;
+    font-size: 1.9em;
+    color: #00cc00;
+    float: auto;
+    padding: .7em;
+    font: center;
+    text-align: center;
+    
+}
+
+h5
+{
+    margin: 0;
+    font-family: 'Volkhov', serif;
+    font-size: 1.3em;
+    color: #f1f500;
+    float: auto;
+    padding: .7em;
+    font: center;
+    text-align: center;
+}
+
+#motto
+{
+    text-align: center;
+    bottom: 1em;
+    position: relative;
+    right: 5px;
+}
+
+nav 
+{	
+    margin: 0 auto;	
+    max-width: 80em; 
+    background-color: #ff9901;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+ul .navigation 
+{ 
+    list-style: none;
+    text-align: center;
+    
+
+}
+
+.navigation 
+{ 
+    list-style: none;
+    text-align: center;
+    background-color: #ff9901;
+    text-align: center; 
+}
+
+.navigation li:first-child 
+{ 
+    display: block;
+}
+
+.navigation li 
+{ 
+    display: none;
+}
+
+.navigation a 
+{	
+    display: block;	
+    color: #000000; 
+    padding: .75rem;	
+    text-align: center;	
+    text-decoration: none;
+}
+
+.navigation a:hover 
+{	
+    color: #000; 
+    background-color: rgba(218, 233, 211, 0.692); 
+    font-weight: 700;	
+}
+
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.*/
+  <ul class="navigation responsive">
+  
+.responsive li 
+{ 
+    display: block; 
+}
+
+/* Media Query for medium + screens*/
+@media only screen and (min-width: 35em) 
+{
+    .navigation li:first-child 
+    { 
+        display: none;	
+    }
+
+    .navigation li 
+    { 
+        display: inline-block; 
+        margin-right: 1rem;
+    }
+
+    .navigation li a 
+    { 
+        color: white;
+    }
+}
+ /*End of the nav bar */
+
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li
+{
+    float: left;
+}
+
+li a
+{
+    display: block;
+    padding: 8px;
+    background-color: #b8700500;
+}
+
+.Hero
+{
+    width: 100%;
+    height: auto;
+}
+
+#weathersum
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    top: 300px;
+    background-color: rgba(226, 228, 133, 0.733);
+    opacity: 50%;
+    width: 250px;
+    padding: 10px;
+    border: 25px soild white;
+    margin: 25px;
+
+} 
+
+.article
+{
+    margin: 1em .5em;
+    color: #d6d304;
+    text-align: center;
+    
+}
+
+.address
+{
+    
+}
+
+iframe
+{
+    position: relative;
+    right: -285px;
+}
+
+/* Json Weather for each city set up*/
+
+
+.cityWeatherBox
+{
+    display: grid;
+    grid-template-columns: 240px 240px 240px;
+    grid-template-rows: 225px;
+    background-color: #6e6a6a49;
+    height: 425x; /*gray background box*/
+    position: relative;
+    left: 0px;
+}
+
+.cityWeatherBox img
+{ 
+  float: left;
+  padding: 5px;
+  border: 0px black;
+  margin: 0px;
+  width: 250px;
+  position: relative;
+  top: 30px; /*postion of the images*/
+}
+
+.citySet
+{
+  float: left;
+  width: 260px;
+  height: 255px; 
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  
+}
+
+.citySetCity /*lay out for the 3 boxes*/
+{
+    width: 236px;
+  border: 6px solid green;
+  padding: 5px;
+  margin: 0px;
+  height: 350px;
+  border: 1px solid;
+  box-shadow: 5px 10px #888888a2;
+}
+/*end of Json Weather*/
+
+table
+{
+    width: 47.813em;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px;
+    margin: 5px;
+    font-family: Ubuntu, sans-serif;
+    text-align: center;
+    box-shadow: 10px 10px 10px rgb(41, 59, 68);
+}
+
+table, tr, td
+{
+    border: 1px gray
+}
+
+thead tr:nth-child(1)
+{
+    background-color: #7FB9C2;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+thead tr:nth-of-type(2)
+{
+    background-color: #628CA6;
+    color: white;
+}
+
+tbody tr:nth-child(odd)
+{
+    background: #E7F0ED;
+}
+
+tbody tr:nth-child(even)
+{
+    background: #E7FFED;
+}
+
+tfoot tr:nth-of-type(1)
+{
+    background: #7FB9C2;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+th
+{
+    border: 1px solild gray;
+    text-align: center
+}
+ /*end of tablebuild.html*/
+
+.grid 
+{
+    display: grid;
+    grid-template-columns: 280px;
+    grid-template-rows: 250px;
+}
+
+#gridwidth
+{
+    width: 600px;
+    height: auto;
+
+}
+
+.norm:hover
+{
+    box-shadow: 0 0 50px #333;
+}
+
+figure
+{
+    margin: 30px;
+    border: 30px;
+    padding: 30px;
+}
+
+figcaption
+{
+    font-size: medium;
+    color: white;
+    text-align: center;
+}
+
+script
+{
+    color: black;
+    font-family: serif;
+}
+
+footer 
+{
+    padding: 1em;
+    text-align: center
+    
+}
+a:link { color: blue;}
+a:visited { color: purple;}
+a:focus { color: green;}
+a:hover { color: red;}
+a:active { color: orange;}

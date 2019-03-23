@@ -6,8 +6,8 @@
     <title>SodaFishPrestonID</title>
     <meta name="description" content="W10 Town Page Build">
     <link rel="stylesheet"  href="css/normalize.css">
-    <link rel="stylesheet"  media="screen and (min-width: 320px)" href="css/small-10.css">
-    <link rel="stylesheet"  media="screen and (min-width: 401px)" href="css/medium-10.css">
+    <!--<link rel="stylesheet"  media="screen and (min-width: 320px)" href="css/small-10.css">-->
+    <!--<link rel="stylesheet"  media="screen and (min-width: 401px)" href="css/medium-10.css">-->
     <link rel="stylesheet"  media="screen and (min-width: 701px)" href="css/large-10.css">
     <link href="https://fonts.googleapis.com/css?family=Volkhov" rel="stylesheet">
 </head>
@@ -40,7 +40,10 @@
                         High: <span id="high"></span><color="yellow">&deg; F</color><br>
                         Wind Chill: <span id="weatheroutput"></span><br>
                         Humidity: <span id="humidity"></span> %<br>
-                        Wind Speed: <span id="wind_speed"></span> mph</div>
+                        Wind Speed: <span id="wind_speed"></span> mph<br>
+                    </div>
+                        
+
                 
                 <span id="weatheroutput"></span>
             </div>
@@ -56,11 +59,11 @@
             <h2>5 Day Forcast</h2> <!--Preston5Day.js-->
             <table>
                 <tr>
-                    <th><span id="day1"></span> </th>
-                    <th><span id="day2"></span></th>
-                    <th><span id="day3"></span></th>
-                    <th><span id="day4"></span></th>
-                    <th><span id="day5"></span></th>
+                    <th><span id="day_1"></span></th>
+                    <th><span id="day_2"></span></th>
+                    <th><span id="day_3"><span></th>
+                    <th><span id="day_4"></span></th>
+                    <th><span id="day_5"></span></th>
                 </tr>
                 <tr>
                     <th><img id="day1Icon" src="" alt=""></th>
@@ -70,15 +73,13 @@
                     <th><img id="day5Icon" src="" alt=""></th>
                 </tr>
                 <tr>
-                    <th><span id="day1temp"></span>&deg</th>
-                    <th><span id="day2temp"></span>&deg</th>
-                    <th><span id="day3temp"></span>&deg</th>
-                    <th><span id="day4temp"></span>&deg</th>
-                    <th><span id="day5temp"></span>&deg</th>
+                    <th><span id="day1temp"></span></th>
+                    <th><span id="day2temp"></span></th>
+                    <th><span id="day3temp"></span></th>
+                    <th><span id="day4temp"></span></th>
+                    <th><span id="day5temp"></span></th>
                 </tr>
-                
             </table>
-
             <div class="article">
                 <h3>Events</h3>
                 <div><span id="prestonEvent"></span></div>

@@ -1,0 +1,442 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 32px;
+    font-family: Verdana;
+    background-color: #074e94;    
+}
+
+.container  
+{
+    width: 20em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#header,#headerimg 
+{ 
+   /* float: left;*/
+    width: 100px;
+    height: auto;
+    padding: 5px;
+    margin: 0;
+
+}
+
+#current
+{
+    float: right;
+    width: 150px;
+    height: auto;
+    margin: 10px;
+    border: 0px;
+    padding: 0px; 
+    line-height: normal;
+    font-size: 12px;
+    background-color: rgba(127, 185, 194, 0.678);
+    text-align: center;
+    color: rgba(255, 255, 0, 0.74);
+    position: relative;
+    right: 5px;
+}
+
+#header
+{
+    width: 19.4em;
+    background: #FFCC66;
+}
+
+#header h1 
+{
+    font-family: 'Volkhov', serif;
+    font-size: 1.3em;
+    color: #cc0033;
+    margin: 0px;
+    padding:0px;
+
+}
+
+h2 
+{
+    font-size: 1.95em;
+    text-align: center;
+    border-top: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+    
+}
+
+.motto
+{
+    float: right;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #993300;
+    margin: 0;
+    top: 20px;
+}
+
+nav 
+{	
+    margin: 0 auto;	
+    max-width: 80em; 
+    background-color: #ff9901;
+    text-align: center;
+}
+
+.navigation 
+{ 
+    list-style: none;
+    text-align: center;
+    background-color: #ff9901;
+    text-align: center; 
+}
+
+.navigation li:first-child 
+{ 
+    display: block;
+}
+
+.navigation li 
+{ 
+    display: none;
+}
+
+.navigation a 
+{	
+    display: block;	
+    color: #000000; 
+    padding: .75rem;	
+    text-align: center;	
+    text-decoration: none;
+}
+
+.navigation a:hover 
+{	
+    color: #000; 
+    background-color: rgba(218, 233, 211, 0.692); 
+    font-weight: 700;	
+}
+
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
+  <ul class="navigation responsive"> */
+  
+.responsive li 
+{ 
+    display: block; 
+}
+
+/* Media Query for medium + screens */
+@media only screen and (min-width: 30em) 
+{
+    .navigation li:first-child 
+    { 
+        display: none;	
+    }
+
+    .navigation li 
+    { 
+        display: inline-block; 
+        margin-right: 1rem;
+    }
+
+    .navigation li a 
+    { 
+        color: white;
+    }
+}
+ /*End of the nav bar */
+
+ul
+{
+    list-style-type: none;
+    text-align: center;
+    font-family: Georgia, sans-serif;
+    font-size: 1.2em;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+li a
+{
+    display: block;
+    color: rgb(201, 255, 102);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a:hover
+{
+    background-color: red;
+    color: white;
+}
+
+#smallHero
+{
+    width: 100%;
+    height: auto !important;
+}
+
+#weathersum
+{
+    background-color: rgba(226, 228, 133, 0.733);
+    opacity: 50%;
+    width: 250px;
+    padding: 10px;
+    border: 25px soild white;
+    margin: 25px;
+    text-align: center;
+
+} 
+/* Json Weather for each city set up*/
+
+
+
+.cityWeatherBox
+{
+    display: grid;
+    grid-template-columns: 240px;
+    grid-template-rows: 300px 300px 300px;
+    grid-gap: 140px;
+    background-color: #6e6a6a49;
+    height: 425x; /*gray background box*/
+    position: relative;
+    left: 0px;
+
+}
+
+.cityWeatherBox img
+{ 
+  float: left;
+  padding: 5px;
+  border: 0px black;
+  margin: 0px;
+  padding: 65px 0px 65px 0;
+  width: 250px;
+  position: relative;
+  top: -1100px; /*postion of the images*/
+}
+
+.citySet
+{
+  float: left;
+  width: 260px;
+  height: 255px; 
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  
+}
+
+.citySetCity /*lay out for the 3 boxes */
+{
+    width: 236px;
+  border: 6px solid green;
+  padding: 5px;
+  margin: 0px;
+  height: 350px;
+  border: 1px solid;
+  box-shadow: 5px 10px #888888a2;
+}
+/*end of Json Weather*/
+
+table
+{
+    width: 20em;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px;
+    margin: 5px;
+    font-family: Ubuntu, sans-serif;
+    text-align: center;
+    box-shadow: 10px 10px 10px rgb(41, 59, 68);
+}
+
+table, tr, td
+{
+    border: 1px gray
+}
+
+thead tr:nth-child(1)
+{
+    background-color: #7FB9C2;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+thead tr:nth-of-type(2)
+{
+    background-color: #628CA6;
+    color: white;
+}
+
+tbody tr:nth-child(odd)
+{
+    background: #E7F0ED;
+}
+
+tbody tr:nth-child(even)
+{
+    background: #E7FFED;
+}
+
+tfoot tr:nth-of-type(1)
+{
+    background: #7FB9C2;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+th
+{
+    border: 1px solild gray;
+    text-align: center
+}
+ /*end of tablebuild.html*/
+
+.artical
+{
+    margin: 5px;
+    border: 25px;
+    padding: 25px;
+    width: 20em;
+    text-align: center;
+}
+
+h4
+{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+.grid 
+{
+    display: grid;
+    grid-template-columns: 280px;
+    grid-template-rows: 250px;
+    grid-gap: 5px;
+    
+}
+
+#gridwidth
+{
+    width: 235px;
+    height: 183.05px;
+}
+
+table
+{
+    width: 20em;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px;
+    margin: 5px;
+    font-family: Ubuntu, sans-serif;
+    text-align: center;
+    box-shadow: 10px 10px 10px rgb(41, 59, 68);
+}
+
+table, tr, td
+{
+    border: 1px gray
+}
+
+thead tr:nth-child(1)
+{
+    background-color: #7FB9C2;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+thead tr:nth-of-type(2)
+{
+    background-color: #628CA6;
+    color: white;
+}
+
+tbody tr:nth-child(odd)
+{
+    background: #E7F0ED;
+}
+
+tbody tr:nth-child(even)
+{
+    background: #E7FFED;
+}
+
+tfoot tr:nth-of-type(1)
+{
+    background: #7FB9C2;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+th
+{
+    border: 1px solild gray;
+    text-align: center
+}
+ /*end of tablebuild.html*/
+
+.norm:hover
+{
+    box-shadow: 0 0 50px #333;
+}
+
+figure
+{
+    margin: 0px;
+}
+
+figcaption
+{
+    font-size: small;
+    color: white;
+}
+
+/* located in stormcenter.html */
+form
+{
+    
+}
+
+#headimg
+{
+    width: 270px;
+    height: auto;
+    float: left;
+}
+
+iframe
+{
+    position: relative;
+    width: 250;
+    height: 150;
+    border: 0;
+}
+
+header, footer 
+{
+    margin: 1.25rem ;
+    padding: .5rem;
+    max-width: 800px;
+}
+
+header, footer, footer a 
+{
+    text-align: center;
+    background-color: #ff9900;
+}
+
+footer 
+{
+    font-size: 13px;
+    
+}
+*/

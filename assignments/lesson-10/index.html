@@ -6,8 +6,8 @@
     <title>SodaFishPrestonID</title>
     <meta name="description" content="W10 Town Page Build">
     <link rel="stylesheet"  href="css/normalize.css">
-    <link rel="stylesheet"  media="screen and (min-width: 320px)" href="css/small-10.css">
-    <link rel="stylesheet"  media="screen and (min-width: 401px)" href="css/medium-10.css">
+    <!--<link rel="stylesheet"  media="screen and (min-width: 320px)" href="css/small-10.css">-->
+    <!--<link rel="stylesheet"  media="screen and (min-width: 401px)" href="css/medium-10.css">-->
     <link rel="stylesheet"  media="screen and (min-width: 701px)" href="css/large-10.css">
     <link href="https://fonts.googleapis.com/css?family=Volkhov" rel="stylesheet">
 </head>
@@ -16,70 +16,65 @@
             <div id="header">
                 <img src="images/landscape.jpg" id="headerimg" alt="Landscape">
                 <div id="current">
-                        <div><bold>Weather Summary</bold></div>
+                        <div><bold>Current Temperature</bold></div>
                         <div class="spacing">Currently: <span id="currently"></span><br>
-                        High: <span id="high"></span><color="yellow">&deg; F</color><br>
-                        Wind Chill: <span id="windChill"></span><br>
-                        Humidity: <span id="humidity"></span> %<br>
+                        Preston: <span id="high"></span><color="yellow">&deg; F</color><br>
+                        Soda Springs: <span id="windChill"></span><br>
+                        Fish Haven: <span id="humidity"></span> %<br>
                         Wind Speed: <span id="wind_speed"></span> mph</div>
                     </div>
                 <h1>SodaFishPreston, ID Weather</h1>
                 <div id="motto">Weather news happens... or not!</div>
             </div>
             <nav>
-                    <ul class="navigation">
-                        <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="preston-10.html">Preston</a></li>
-                        <li><a href="#sodas">Soda Springs</a></li>
-                        <li><a href="#fish">Fish Haven</a></li>
-                        <li><a href="stormcenter.html">Storm Center</a></li>
-                        <li><a href="gallery-10.html">Gallery</a></li>                        
-                    </ul>                         
-                </nav>
+                <ul class="navigation">
+                    <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="preston-10.html">Preston</a></li>
+                    <li><a href="#sodas">Soda Springs</a></li>
+                    <li><a href="#fish">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery-10.html">Gallery</a></li>                        
+                </ul>                         
+            </nav>
             <h2>Welcome to my Weather Site!!</h2>
-            <div id="weathersum">Weather Summary
-                <h4>Wind Chill Calculator</h4>
-                Temperature:<input type="text" id='Temp'>
-                    <br>
-                Wind Chill:<input type="text" id='Wind'>
-                <br>
-                <button onclick="windChill()">show</button >
-                <span id="weatheroutput"></span>
-            </div>
-            <picture>
+            <picture class="Hero">
                 <source srcset="images/Optimizedhero400.jpeg" media="(min-width: 200px) and (max-width: 499px)">
-                <source srcset="images/Optimizedhero600.jpeg" media="(min-width: 500px) and (max-width: 799px)">
-                <source srcset="images/Optimizedhero800.jpeg" media="(min-width: 801px)">
-                <img src="images/Optimizedhero250.jpg" id="Hero" alt="Hero Image">
+                    <source srcset="images/Optimizedhero600.jpeg" media="(min-width: 500px) and (max-width: 799px)">
+                        <source srcset="images/Optimizedhero800.jpeg" media="(min-width: 801px)">
+                <img src="images/Optimizedhero250.jpg" alt="Hero Image">
             </picture>
             <span class="json">
                 <div class="cityWeatherBox">
                     <div class="citySet">
-                        <div id="prestonMoto"></div>
+                            <div class="citySetCity">
+                                <div id="prestonMoto"></div>
+                            </div>
                     </div>
-                    
                     <div class="citySet">
-                        <div id="sodaMoto"></div>
+                        <div class="citySetCity">
+                            <div id="sodaMoto"></div>
+                        </div>
                     </div>
-                    
                     <div class="citySet">
-                         <span id="fishMoto"></span>
+                        <div class="citySetCity">
+                            <span id="fishMoto"></span>
+                        </div>
                     </div>
                         <img src="images/OptPreston.jpg" id="Preston" alt="Preston image">
                         <img src="images/OptSodaSprings.jpg" id="Soda Springs" alt="Soda Springs image">
                         <img src="images/OptFishHaven.jpg" id="Fish Haven" alt="Fish Haven image">
                     </div>
             </span>
-
+            <br>
             <h2>5 Day Forcast</h2>
             <table>
                 <tr>
-                    <th> <span id="day1"> </span> </th>
-                    <th><span id="day2"></span></th>
-                    <th><span id="day3"></span></th>
-                    <th><span id="day4"></span></th>
-                    <th><span id="day5"></span></th>
+                    <th> <span id="day_1"> </span> </th>
+                    <th><span id="day_2"></span></th>
+                    <th><span id="day_3"></span></th>
+                    <th><span id="day_4"></span></th>
+                    <th><span id="day_5"></span></th>
                 </tr>
                 <tr>
                     <th><img id="day1Icon" src="" alt=""></th>
@@ -97,9 +92,7 @@
                 </tr>
             </table>
             <div class="article">
-                <h3>Artical Title</h3>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum magna et tristique blandit. Nullam a ultricies ipsum. Nunc nec vestibulum ex, vel venenatis sapien. Mauris vel ante ante. Donec sed ante blandit, convallis purus vel, euismod dolor. Praesent sit amet pellentesque nulla. Fusce metus justo, tristique eu leo nec, facilisis mattis nisl. Suspendisse mollis tellus eros, non dignissim est mollis eu. Suspendisse nisl nulla, sagittis vel mollis sed, tristique quis nibh. Integer at pellentesque odio.
-                </h4>
+                
             </div>
         <div class="address">
             <h5>#</h5>
