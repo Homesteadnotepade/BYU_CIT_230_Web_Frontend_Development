@@ -1,5 +1,5 @@
 let fishHavenSum = new XMLHttpRequest();
-let FhURLstring = 'http://api.openweathermap.org/data/2.5/weather?lat=42.036876&lon=-111.396318&units=imperial&APPID=8ba9cf20950d82df6a347fc632349c65';
+let FhURLstring = 'https://api.openweathermap.org/data/2.5/weather?lat=42.036876&lon=-111.396318&units=imperial&APPID=8ba9cf20950d82df6a347fc632349c65';
 fishHavenSum.open('GET', FhURLstring, true);
 fishHavenSum.send();
 

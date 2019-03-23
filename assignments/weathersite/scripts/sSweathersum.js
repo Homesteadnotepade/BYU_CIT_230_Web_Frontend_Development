@@ -1,5 +1,5 @@
 let sSweatherSum = new XMLHttpRequest();
-let sSUrlReq = 'http://api.openweathermap.org/data/2.5/weather?lat=42.659211&lon=-111.585378&units=imperial&APPID=8ba9cf20950d82df6a347fc632349c65';
+let sSUrlReq = 'https://api.openweathermap.org/data/2.5/weather?lat=42.659211&lon=-111.585378&units=imperial&APPID=8ba9cf20950d82df6a347fc632349c65';
 sSweatherSum.open('GET', sSUrlReq, true);
 sSweatherSum.send();
 

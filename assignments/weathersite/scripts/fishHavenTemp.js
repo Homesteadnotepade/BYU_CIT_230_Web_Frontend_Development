@@ -1,5 +1,5 @@
 let fishHavenTemp = new XMLHttpRequest();
-let fishHavenApiURL = 'http://api.openweathermap.org/data/2.5/weather?lat=42.036876&lon=-111.396318&units=imperial&APPID=8ba9cf20950d82df6a347fc632349c65';
+let fishHavenApiURL = 'https://api.openweathermap.org/data/2.5/weather?lat=42.036876&lon=-111.396318&units=imperial&APPID=8ba9cf20950d82df6a347fc632349c65';
 fishHavenTemp.open('GET', fishHavenApiURL, true);
 fishHavenTemp.send();
 

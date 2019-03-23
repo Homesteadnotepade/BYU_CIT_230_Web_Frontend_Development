@@ -1,5 +1,5 @@
 let weatherRequest = new XMLHttpRequest();
-let FDURLstring = 'http://api.openweathermap.org/data/2.5/forecast?lat=42.036876&lon=-111.396318&units=imperial&APPID=8ba9cf20950d82df6a347fc632349c65';
+let FDURLstring = 'https://api.openweathermap.org/data/2.5/forecast?lat=42.036876&lon=-111.396318&units=imperial&APPID=8ba9cf20950d82df6a347fc632349c65';
 weatherRequest.open('GET', FDURLstring, true);
 weatherRequest.send();
 
