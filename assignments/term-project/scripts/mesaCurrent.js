@@ -16,5 +16,3 @@ mesaTemp.onload =  function () {
 
     
 }
-
-api.openweathermap.org/data/2.5/weather?lat=33.412789&lon=-111.819578&units=imperial&APPID=8ba9cf20950d82df6a347fc632349c65
