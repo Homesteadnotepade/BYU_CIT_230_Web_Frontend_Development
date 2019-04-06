@@ -162,7 +162,7 @@
     },
     {
         "templeName": "The Gila Valley Arizona Temple",
-        "address": "5291 West Highway 70, Central, Arizona  85531",
+        "address": "5291 West Highway 70, Central, Arizona 85531",
         "telephone": "928-428-7243",
         "email": "gilavalleytemple@temple.com",
         "services": [
