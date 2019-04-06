@@ -1,92 +1,81 @@
 {
-"templeName": "Mesa Arizona Temple",
-"address": "101 South LeSueur, Mesa, Arizona  85204-1031",
-"telephone": "480-833-1211",
-"email": "mesatemple@temple.com",
-"services": [
+    "temples": [
     {
-        "Clothing rental available",
-        "Cafeteria available",
-        "NO patron housing available",
-        "Distribution center nearby"
-    }
-],
-"history": [
-    {
-        "Announcement":"3 October 1919",
-        "Site Dedication":"28 November 1921 by Heber J. Grant",
-        "Groundbreaking":"25 April 1922 by Heber J. Grant",
-        "Dedication":"23–26 October 1927 by Heber J. Grant"
-    }
-],
-"ordinance schedule": [
-    {
-        "Baptism":[
+        "templeName": "Mesa Arizona Temple",
+        "address": "101 South LeSueur, Mesa, Arizona  85204-1031",
+        "telephone": "480-833-1211",
+        "email": "mesatemple@temple.com",
+        "services": [
+                "Clothing rental available",
+                "Cafeteria available",
+                "NO patron housing available",
+                "Distribution center nearby"
+        ],
+        "history": [
             {
-                "Tuesday - Saturday": [
+                "Announcement":"3 October 1919",
+                "Site Dedication":"28 November 1921 by Heber J. Grant",
+                "Groundbreaking":"25 April 1922 by Heber J. Grant",
+                "Dedication":"23–26 October 1927 by Heber J. Grant"
+            }
+        ],
+        "ordinance schedule": [
+            {
+                "Baptism":[
                     {
-                        "Temple closed during renovation",
+                        "Tuesday - Saturday": [
+                                "Temple closed during renovation"
+                        ],
+                        "Sunday - Monday": [
+                                "Temple closed during renovation"
+                        ]
                     }
                 ],
-                "Sunday - Monday": [
+                "Initiatory": [
                     {
-                        "Temple closed during renovation",
+                        "Tuesday - Saturday":[
+                                "Temple closed during renovation"
+                        ],
+                        "Sunday - Monday":[
+                                "Temple closed during renovation"
+                        ]
+                    }
+                ],
+                "Sealing":[
+                    {
+                        "Tuesday - Saturday":[
+                                "Temple closed during renovation"
+                        ],
+                        "Sunday - Monday":[
+                                "Temple closed during renovation"
+                        ]
                     }
                 ]
             }
         ],
-        "Initiatory": [
+        "session schedule":[
             {
-                "Tuesday - Saturday":[
+                "Endownment": [
                     {
-                        "Temple closed during renovation",
-                    }
-                ],
-                "Sunday - Monday":[
-                    {
-                        "Temple closed during renovation",
+                        "Tuesday - Saturday":[
+                                "Temple closed during renovation"
+                        ],
+                        "Sunday - Monday":[
+                                "Temple closed during renovation"
+                        ]
                     }
                 ]
             }
         ],
-        "Sealing":[
-            {
-                "Tuesday - Saturday":[
-                    {
-                        "Temple closed during renovation",
-                    }
-                ],
-                "Sunday - Monday":[
-                    {
-                        "Temple closed during renovation",
-                    }
-                ]
-            }
+        "temple closure schedule": [
+                "Temple closed during renovation",
+                "Temple projected to reopen in 2020"
         ]
     }
-],
-"session schedule":[
-    {
-        "Endownment": [
-            {
-                "Tuesday - Saturday":[
-                    {
-                        "Temple closed during renovation",
-                    }
-                ],
-                "Sunday - Monday":[
-                    {
-                        "Temple closed during renovation",
-                    }
-                ]
-            }
-        ]
-    }
-],
-"temple closure schedule":[
-    {
-        "Temple closed during renovation",
-        "Temple projected to reopen in 2020"
-    }
-]
+    ]   
 }
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> 4bcc5f2b1a64fce988de5aacad7733d94b1769fd
