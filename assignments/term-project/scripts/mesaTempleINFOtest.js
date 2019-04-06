@@ -1,4 +1,4 @@
-var mesaJsonURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+var mesaJsonURL = 'jaypstay.github.io/assignments/term-project/scripts/testjsons.json';
  
 var mesaRequest = new XMLHttpRequest();
 
@@ -13,14 +13,14 @@ mesaRequest.onload = function() {
     
     
 };
-// Preston information updated
-function populateMesa(jsonObj){
-    var towns = jsonObj.towns;
 
-    /*for (var i = 0; i < towns.length; i++){
-       var name = towns[i].name;
-        if (name === "Preston"){
-            var townName = document.createElement("h3");
+function populateMesa(jsonObj){
+    var temple = jsonObj.temple;
+
+    for (var i = 0; i < temple.length; i++){
+       var temtempleNameplename = temple[i].name;
+        if (templeName === "Mesa Arizona Temple"){
+           /* var townName = document.createElement("h3");
             townName.textContent = towns[i].name;
           var townMotto = document.createElement("p");
             townMotto.textContent = "Motto: " + towns[i].motto;
@@ -32,7 +32,7 @@ function populateMesa(jsonObj){
             averageRainfall.textContent = "Average Rainfall: " + towns[i].averageRainfall;*/
 
             var history = document.createElement("h4");
-            history.textContent = "history:" + history;
+              history.textContent = "history:" + temple.history;
             
           /*document.getElementById("MesaTempleInfo").appendChild(townName);
           document.getElementById("MesaTempleInfo").appendChild(townMotto);
