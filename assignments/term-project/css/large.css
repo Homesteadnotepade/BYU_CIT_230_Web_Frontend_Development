@@ -46,6 +46,19 @@ header, footer
     float: left;
 }
 
+#resGilbert3
+{
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#resGilbert4
+{
+    display: flex;
+    justify-content: flex-start;
+}
+
 #templeCouple
 {
     height: auto;
@@ -175,7 +188,70 @@ display block because the repsonsive class is added to the end of the class list
         color: white;
     }
 }
+/*
+table 
+{
+    font-family: 'Bodoni MT', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 
+td, th 
+{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 1px;
+    text-align: center;
+    height: 20px;
+}
+*/
+.grid-container
+{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1000 1000 1000px;
+    font-family: 'Bodoni MT', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.grid-item
+{
+    text-align: left;
+    padding: 1px;
+    text-align: center;
+    height: 20px;
+}
+
+<div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>
+
+#TempleInformation
+{
+    color: black;
+}
+
+#Services
+{
+    text-align: center;
+    font-weight: 100;
+}
+
+#footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
 footer
 {
     font-size: 16px;

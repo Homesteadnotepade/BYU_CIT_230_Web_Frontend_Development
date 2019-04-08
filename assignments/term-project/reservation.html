@@ -12,9 +12,125 @@
     <link href="https://fonts.googleapis.com/css?family=Volkhov" rel="stylesheet">
 </head>
 <body>
+    <div class="container">
+            <header>
+                <img src="images/Temple Lights.jpg" id="templeLights" alt="young children sitting on a bench for the Christmas Temple Lights">
+                <img src="images/Opt-gilbert2.jpg" id="gilbert2" alt="Exterior image of the Arizona Gilbert Temple">
+                <h1>Gilbert Temple Inn & Suites</h1>
+                <div id="motto">
+                    <h4>I love to see the temple...I'm going there today</h4>
+                </motto>
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="reservation.html"  class="active">Reservation</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="Contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
     <!--contains a form that collects relevant information when making a normal stay reservation 
         including the location, date, number and type of rooms, registrant's full name, email, phone, 
         home state or country, and special accommodations/comments. You will need to use the CSS flex 
         method for the layout of your reservation form for full credit.-->
+        <div class="grid-container">
+                <div class="grid-item"><img src="images/Opt-gilbert4reSized.jpg" id="resGilbert4"></div>
+                <div class="grid-item"><table>
+                        <tr>
+                            <td>Location:</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" name="location" value="gilbert">Gilbert<br>
+                                <input type="radio" name="location" value="mesa">Mesa<br>
+                                <input type="radio" name="location" value="phoenix">Phoenix<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Full Name:</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="fullName" required
+                                pattern="[A-Z][A-Za-z' -]+{5}"></td>
+                        </tr>
+                        <tr>
+                            <td>Email Address:</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="email"
+                                placeholder="user@domain.com"></td></td>
+                        </tr>
+                        <tr>
+                            <td>Phone Number:</td>
+                        </tr>
+                        <tr>
+                            <td><input type="tel" id="phoneNumber" required></td>
+                        </tr>
+                        <tr>
+                            <td>Home State/Country:</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="stateCountry"
+                                placeholder="Utah or Cananda"></td>
+                        </tr>
+                        <tr>
+                            <td>Number of Guests:</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select number="numberGuests">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Date:</td>
+                        </tr>
+                        <tr>
+                            <td><input type="date" id="date"></td>
+                        </tr>
+                        <tr>
+                            <td>Type of Room:</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select room="typeOfRoom">
+                                    <option value="Single">Single: Room for one person</option>
+                                    <option value="Double">Double: Room for two people</option>
+                                    <option value="Triple">Triple: Room for three people</option>
+                                    <option value="Quad">Quad: Room for four people</option>
+                                    <option value="Queen">Queen: Room with a queen-size bed</option>
+                                    <option value="King">King: Room with a king-size bed</option>
+                                    <option value="Twin">Twin: Room with two beds</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Special Accommodations/Comments</td>
+                        </tr>
+                        <tr>
+                            <td><textarea id="Comment" placeholder="Type here..." style="height: 100px"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><button><a href="thankyou.html" type="button"></a>Submit</button></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="grid-item"><img src="images/Opt-gilbert3Resized.jpg" id="resGilbert3">
+            </div>
+            </div>
+    </div>
+    
+        <footer id=footer>
+            <h5>&copy; Joseph "Jay" Stay, Arizona <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a><br>
+            OpenWeatherMap was used on this site. Visit them at <a href="https://openweathermap.org/">OpenWeatherMap.org</a><br>
+            Temple images from <a href="https://www.lds.org/media-library/images/?lang=eng&_r=1">LDS Media Libraray</a></h5>
+        </footer>
+    </div>
 </body>
 </html>
