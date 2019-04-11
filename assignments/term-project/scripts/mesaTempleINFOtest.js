@@ -19,10 +19,10 @@ function populateMesa(jsonObj){
        var temtempleNameplename = temple[i].name;
         if (templeName === "Mesa Arizona Temple"){
           
-            var service = document.createElement("h4");
-            service.textContent = "service:" + temple.service;
+            var services = document.createElement("h2");
+            services.textContent = "services:" + temple.services;
           
-          document.getElementById("MesaTempleInfo").appendChild(service);
+          document.getElementById("MesaTempleInfo").appendChild(services);
         }
     }
 }
