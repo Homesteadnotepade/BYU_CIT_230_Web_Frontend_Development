@@ -1,0 +1,56 @@
+{
+    "templeService": [
+        {
+            "templeName": "Mesa Arizona Temple",
+            "address": "101 South LeSueur, Mesa, Arizona  85204-1031",
+            "telephone": "480-833-1211",
+            "email": "mesatemple@temple.com",
+            "services": [
+                {
+                "Clothing rental available",
+                "Cafeteria available",
+                "NO patron housing available",
+                "Distribution center nearby"
+                }
+            ]
+        },
+        {
+            "templeName": "Phoenix Arizona Temple",
+            "address": "5220 West Pinnacle Peak Road, Phoenix, Arizona  85310",
+            "telephone": "623-474-9500",
+            "email": "phoenixtemple@temple.com",
+            "services": [
+                {
+                "NO clothing rental available",
+                "NO cafeteria available",
+                "NO patron housing available",
+                "NO distribution center nearby",
+                }
+            ]
+        },
+        {
+            "templeName": "Snowflake Arizona Temple",
+            "address": "1875 West Canyon Drive, Snowflake, Arizona  85937",
+            "telephone": "928-536-6626",
+            "email": "snowflaketemple@temple.com",
+            "services": [
+                "NO clothing rental available",
+                "NO cafeteria available",
+                "NO patron housing available",
+                "Distribution center nearby",
+            ]
+        },
+        {
+            "templeName": "The Gila Valley Arizona Temple",
+            "address": "5291 West Highway 70, Central, Arizona 85531",
+            "telephone": "928-428-7243",
+            "email": "gilavalleytemple@temple.com",
+            "services": [
+                "NO clothing rental available",
+                "NO cafeteria available",
+                "NO patron housing available",
+                "NO distribution center nearby",
+            ]
+        }
+    ]
+}
