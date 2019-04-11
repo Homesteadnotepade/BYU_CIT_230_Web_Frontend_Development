@@ -6,12 +6,10 @@
             "telephone": "480-833-1211",
             "email": "mesatemple@temple.com",
             "services": [
-                {
                 "Clothing rental available",
                 "Cafeteria available",
                 "NO patron housing available",
                 "Distribution center nearby"
-                }
             ]
         },
         {
@@ -20,12 +18,10 @@
             "telephone": "623-474-9500",
             "email": "phoenixtemple@temple.com",
             "services": [
-                {
                 "NO clothing rental available",
                 "NO cafeteria available",
                 "NO patron housing available",
-                "NO distribution center nearby",
-                }
+                "NO distribution center nearby"
             ]
         },
         {
@@ -37,7 +33,7 @@
                 "NO clothing rental available",
                 "NO cafeteria available",
                 "NO patron housing available",
-                "Distribution center nearby",
+                "Distribution center nearby"
             ]
         },
         {
@@ -49,7 +45,7 @@
                 "NO clothing rental available",
                 "NO cafeteria available",
                 "NO patron housing available",
-                "NO distribution center nearby",
+                "NO distribution center nearby"
             ]
         }
     ]

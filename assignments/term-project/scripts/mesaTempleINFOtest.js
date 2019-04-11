@@ -1,4 +1,4 @@
-var mesaJsonURL = 'https://jaypstay.github.io/assignments/term-project/scripts/testjsons.json';
+var mesaJsonURL = 'https://jaypstay.github.io/assignments/term-project/scripts/templeService.json';
  
 var mesaRequest = new XMLHttpRequest();
 
@@ -19,10 +19,10 @@ function populateMesa(jsonObj){
        var temtempleNameplename = temple[i].name;
         if (templeName === "Mesa Arizona Temple"){
           
-            var history = document.createElement("h4");
-              history.textContent = "history:" + temple.history;
+            var service = document.createElement("h4");
+            service.textContent = "service:" + temple.service;
           
-          document.getElementById("MesaTempleInfo").appendChild(history);
+          document.getElementById("MesaTempleInfo").appendChild(service);
         }
     }
 }
