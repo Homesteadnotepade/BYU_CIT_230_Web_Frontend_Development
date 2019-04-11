@@ -1,15 +1,16 @@
+
 body
 {
     margin: 0;
-    padding: .15em;
+    padding: .5em;
     font-size: 16px;
     line-height: 40px ;
     background-color: #FCFCF2;
 }
 
-.container  
+.container
 {
-    width: 100%;
+    width: 400px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -24,18 +25,16 @@ header, footer
 
 #templeLights
 {
-    height: auto;
-    width: 260px;
-    padding: 5px; 
-    float: left;
+    width: 0px;
+    height: 0px;
 }
 
 #gilbert2
 {
+    width: 200px;
     height: auto;
-    width: 245px;
     padding: 5px;
-    float: right;
+    float: center;
 }
 
 #gilbert4
@@ -48,6 +47,8 @@ header, footer
 
 #resGilbert3
 {
+    width: 250px;
+    height: auto;
     float: right;
     display: flex;
     justify-content: flex-end;
@@ -55,6 +56,8 @@ header, footer
 
 #resGilbert4
 {
+    width: 250px;
+    height: auto;
     display: flex;
     justify-content: flex-start;
 }
@@ -76,27 +79,20 @@ h1
     border: 0px;
     margin: 0px;
     text-align: center;
+    line-height: 95%;
 }
 
 h2
 {
     font-family: 'Bodoni MT', sans-serif;
     color: #002533;
-    text-align: center;
 }
 
-h3
+h3 h4 h5 h6
 {
+    text-align: center;
     font-family: 'merriweather', 'Times New Roman', Times, serif;
     color: #000000;
-    text-align: center;
-}
-
-h4 h5 h6
-{
-    font-family: 'merriweather', 'Times New Roman', Times, serif;
-    color: #000000;
-    text-align: center;
 }
 
 #motto
@@ -119,6 +115,7 @@ button
     border-radius: 12px;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 20px 50px 0 rgba(0,0,0,0.19);
     font-family: 'Source Sans Pro', sans-serif;
+    
 }
 
 .grid-item
@@ -204,7 +201,6 @@ table
     display: flex;
     justify-content: center;
     text-align: center;
-    line-height: 1.5;
 }
 
 td, th 
@@ -216,139 +212,52 @@ td, th
     height: 20px;
 }
 
-li
-{
-  line-height: 1;
-  text-align: justify;
-}
-
 .grid-container
 {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 1000 1000 1000px;
-    grid-gap: 5px;
-    width: 75%;
-    align-content: center;
+    font-family: 'Bodoni MT', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
-.grid-item1
+.grid-item
 {
-    grid-column: 1;
+    text-align: left;
+    padding: 1px;
+    text-align: center;
+    height: 20px;
 }
 
-.grid-item2
-{
-    grid-column: 2;
-}
-
-.grid-item3
-{
-    grid-column: 3;
-}
+<div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>
 
 #TempleInformation
 {
     color: black;
 }
 
-#seniorMissCouple
+#widthSpace
 {
-    width: auto;
-    height: 550px;
-    padding: 2em;
-    float: left;
+    width: 25em;
+    padding: 5em;
 }
 
-#Missionary
+.Services, ul, li
 {
-    widows: auto;
-    height: 300px;
-    float: right;
-    padding: 2em;
-}
-
-.Miss-container1
-{
-    grid-column: 1;
-    grid-row: 1 / span 2;
-}
-
-.Miss-container2
-{
-    grid-column: 2;
-    
-}
-
-.Miss-container3
-{
-    grid-column: 3;
-}
-
-.Miss-container4
-{
-    grid-column: 3;
-    grid-row: 2;
-}
-
-.Miss-container2
-{
-    grid-column: 1;
-}
-
-.Cont1
-{
-    grid-column: 1;
-}
-
-.Cont2
-{
-    grid-column: 1;
     line-height: 1.6;
-    padding: 10px;
-}
-
-.Cont3
-{
-    grid-column: 1;
-    grid-row: 1 / span 2;
-    padding: 10px;
-}
-
-.Serv1 
-{
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 2;
-}
-
-.Serv2 
-{
-    grid-column: 3;
-    grid-row: 1 / span 2;
-}
-
-.Serv3
-{
-    grid-column: 1 / span 3;
-    grid-row: 3;
-}
-
-.Serv4 
-{  
-    grid-column: 2 / span 2;
-    grid-row: 4;
-}
-
-.Serv5 
-{
-    grid-column: 1;
-    grid-row: 4  / span 2;
 }
 
 #OptPhoenixTemple
 {
     width: auto;
-    height: 300px;
+    height: 250px;
     float: right;
     padding: 1.1em;
     border: 0px;
@@ -358,21 +267,14 @@ li
 #servMesaTemple
 {
     width: auto;
-    height: 300px;
+    height: 220px;
     float: left;
     padding: 1.1em;
     border: 0px;
     margin: 5px;
 
 }
-
-iframe
-{
-    padding: 20px;
-    border: 5px;
-    border-color: #d9d291
-}
-
+/*
 #footer
 {
     display: flex;
@@ -380,8 +282,11 @@ iframe
     align-items: flex-end;
 
 }
+*/
 footer
 {
+    position: relative;
+    top: 63em;
     font-size: 16px;
     text-align: center;
     line-height: normal;
