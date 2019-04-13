@@ -7,7 +7,7 @@ gilaValleyTemp.onload =  function () {
     let CurrentGilaValleyTemp = JSON.parse(gilaValleyTemp.responseText);
     console.log(CurrentGilaValleyTemp);
     
-    document.getElementById('currently').innerHTML = CurrentGilaValleyTemp.weather[0].main;
+    document.getElementById('gilaVallyCurrent').innerHTML = CurrentGilaValleyTemp.weather[0].main;
     document.getElementById('high').innerHTML = CurrentGilaValleyTemp.main.temp_max;    
     document.getElementById('humidity').innerHTML = CurrentGilaValleyTemp.main.humidity;
     document.getElementById('wind_speed').innerHTML = CurrentGilaValleyTemp.wind.speed;
